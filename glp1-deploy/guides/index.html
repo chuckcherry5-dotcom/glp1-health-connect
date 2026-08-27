@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GLP-1 Guides | Educational Resources | GLP-1 Health Connect</title>
+  <meta name="description" content="Educational guides on GLP-1 medications, telehealth programs, costs, and how to choose the right provider. Evidence-based information sourced from FDA and NIH." />
+  <meta name="keywords" content="GLP-1 guide, semaglutide guide, tirzepatide, telehealth education, GLP-1 cost" />
+  <meta property="og:title" content="GLP-1 Educational Guides | GLP-1 Health Connect" />
+  <meta property="og:description" content="Learn about GLP-1 medications, telehealth programs, costs, and how to choose the right provider." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://glp1-health-connect.vercel.app/guides/" />
+  <link rel="canonical" href="https://glp1-health-connect.vercel.app/guides/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal:      #0ABFA3;
+      --teal-dark: #088a77;
+      --teal-dim:  #0ABFA318;
+      --navy:      #0B1F3A;
+      --navy-mid:  #122947;
+      --ink:       #0F1923;
+      --slate:     #4A5568;
+      --mist:      #F4F7FA;
+      --white:     #FFFFFF;
+      --border:    #E2E8F0;
+      --radius-sm: 8px;
+      --radius:    14px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.05);
+      --shadow:    0 4px 16px rgba(0,0,0,.08), 0 1px 4px rgba(0,0,0,.05);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5%;
+    }
+    .nav-inner {
+      max-width: 1120px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Sora', sans-serif;
+      font-size: 17px; font-weight: 700;
+      color: var(--navy); text-decoration: none;
+    }
+    .logo-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--teal);
+      box-shadow: 0 0 0 3px var(--teal-dim);
+    }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a {
+      font-size: 14px; font-weight: 500;
+      color: var(--slate); text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--navy); }
+    .nav-cta {
+      background: var(--teal);
+      color: var(--white) !important;
+      padding: 9px 20px;
+      border-radius: var(--radius-sm);
+      font-size: 14px; font-weight: 600;
+      text-decoration: none;
+      transition: background .2s;
+    }
+    .nav-cta:hover { background: var(--teal-dark) !important; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      color: var(--white);
+      padding: 80px 5%;
+      text-align: center;
+    }
+    .hero-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .hero h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+    .hero p {
+      font-size: 18px;
+      opacity: 0.95;
+      line-height: 1.5;
+    }
+
+    /* ── GUIDES GRID ── */
+    .guides-section {
+      padding: 80px 5%;
+      background: var(--white);
+    }
+    .guides-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+    .guides-intro {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .guides-intro h2 {
+      font-family: 'Sora', sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--navy);
+    }
+    .guides-intro p {
+      font-size: 18px;
+      color: var(--slate);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .guides-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+    }
+    .guide-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      transition: all .3s;
+      cursor: pointer;
+    }
+    .guide-card:hover {
+      border-color: var(--teal);
+      box-shadow: var(--shadow);
+      transform: translateY(-4px);
+    }
+    .guide-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius);
+      background: var(--teal-dim);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+    .guide-card h3 {
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: var(--navy);
+    }
+    .guide-card p {
+      font-size: 15px;
+      color: var(--slate);
+      line-height: 1.6;
+      flex-grow: 1;
+      margin-bottom: 20px;
+    }
+    .guide-card a {
+      display: inline-block;
+      color: var(--teal);
+      font-weight: 600;
+      text-decoration: none;
+      transition: color .2s;
+      align-self: flex-start;
+    }
+    .guide-card a:hover { color: var(--teal-dark); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      padding: 60px 5%;
+    }
+    .footer-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-section h4 {
+      font-family: 'Sora', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+      opacity: 0.7;
+    }
+    .footer-section ul {
+      list-style: none;
+    }
+    .footer-section ul li {
+      margin-bottom: 12px;
+    }
+    .footer-section a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color .2s;
+    }
+    .footer-section a:hover { color: var(--teal); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 30px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 32px; }
+      .guides-intro h2 { font-size: 28px; }
+      .nav-links { gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <div class="logo-dot"></div>
+        GLP-1 Health Connect
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/guides/">Guides</a>
+        <a href="/how-we-review.html">How We Review</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>GLP-1 Education Center</h1>
+      <p>Evidence-based guides to help you understand GLP-1 medications, telehealth programs, and how to choose the right provider for your needs.</p>
+    </div>
+  </section>
+
+  <section class="guides-section">
+    <div class="guides-inner">
+      <div class="guides-intro">
+        <h2>Our Guides</h2>
+        <p>Each guide is thoroughly researched and sourced from authoritative medical sources including FDA and NIH publications.</p>
+      </div>
+
+      <div class="guides-grid">
+        <a href="/guides/semaglutide-vs-tirzepatide.html" class="guide-card" style="text-decoration: none; color: inherit;">
+          <div class="guide-icon">💊</div>
+          <h3>Semaglutide vs Tirzepatide</h3>
+          <p>Understand the key differences between the two most popular GLP-1 medications, how they work, FDA approval status, and which might be right for you.</p>
+          <a href="/guides/semaglutide-vs-tirzepatide.html">Read Guide →</a>
+        </a>
+
+        <a href="/guides/glp1-program-cost.html" class="guide-card" style="text-decoration: none; color: inherit;">
+          <div class="guide-icon">💰</div>
+          <h3>Understanding GLP-1 Program Costs</h3>
+          <p>Complete breakdown of program pricing, hidden fees to watch for, medication costs, membership fees, and how insurance and cash-pay options compare.</p>
+          <a href="/guides/glp1-program-cost.html">Read Guide →</a>
+        </a>
+
+        <a href="/guides/what-glp1-telehealth-programs-include.html" class="guide-card" style="text-decoration: none; color: inherit;">
+          <div class="guide-icon">🏥</div>
+          <h3>What's Included in Telehealth Programs</h3>
+          <p>Checklist of program components, what to expect during your first visit, ongoing support, medication delivery, and how to evaluate program quality.</p>
+          <a href="/guides/what-glp1-telehealth-programs-include.html">Read Guide →</a>
+        </a>
+
+        <a href="/guides/questions-before-choosing-glp1-provider.html" class="guide-card" style="text-decoration: none; color: inherit;">
+          <div class="guide-icon">❓</div>
+          <h3>Questions Before Choosing a Provider</h3>
+          <p>Essential questions to ask before selecting a GLP-1 telehealth provider. Printable checklist to help you evaluate and compare programs.</p>
+          <a href="/guides/questions-before-choosing-glp1-provider.html">Read Guide →</a>
+        </a>
+
+        <a href="/guides/how-online-glp1-telehealth-works.html" class="guide-card" style="text-decoration: none; color: inherit;">
+          <div class="guide-icon">📱</div>
+          <h3>How Online GLP-1 Telehealth Works</h3>
+          <p>Step-by-step explanation of the telehealth process, from enrollment through ongoing medication management. What to expect at each stage.</p>
+          <a href="/guides/how-online-glp1-telehealth-works.html">Read Guide →</a>
+        </a>
+
+        <a href="/how-we-review.html" class="guide-card" style="text-decoration: none; color: inherit;">
+          <div class="guide-icon">🔍</div>
+          <h3>Our Review Methodology</h3>
+          <p>Learn how we research and compare GLP-1 programs. Our commitment to independent analysis, data sources, and regular updates.</p>
+          <a href="/how-we-review.html">Read More →</a>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/guides/">All Guides</a></li>
+            <li><a href="/how-we-review.html">Our Methodology</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/terms-of-use.html">Terms of Use</a></li>
+            <li><a href="/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+            <li><a href="/medical-disclaimer.html">Medical Disclaimer</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Providers</h4>
+          <ul>
+            <li><a href="/#skinny-rx">SkinnyRx</a></li>
+            <li><a href="/#trim-rx">TrimRx</a></li>
+            <li><a href="/#eden">Eden</a></li>
+            <li><a href="/#fridays-health">Fridays Health</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GLP-1 Health Connect. All rights reserved.</p>
+        <p><strong>Affiliate Disclosure:</strong> We earn commissions on qualified referrals. <a href="/affiliate-disclosure.html" style="color: var(--teal);">Learn more</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

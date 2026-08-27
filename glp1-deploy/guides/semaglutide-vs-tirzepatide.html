@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semaglutide vs Tirzepatide: Complete Comparison | GLP-1 Health Connect</title>
+  <meta name="description" content="Compare semaglutide and tirzepatide GLP-1 medications. Differences in mechanism, FDA approval, efficacy, side effects, and which may be right for you." />
+  <meta name="keywords" content="semaglutide vs tirzepatide, GLP-1 medications, Ozempic, Mounjaro, medication comparison" />
+  <meta property="og:title" content="Semaglutide vs Tirzepatide: Complete Guide" />
+  <meta property="og:description" content="Detailed comparison of semaglutide and tirzepatide medications, mechanisms, FDA approval, and efficacy." />
+  <link rel="canonical" href="https://glp1-health-connect.vercel.app/guides/semaglutide-vs-tirzepatide.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal:      #0ABFA3;
+      --teal-dark: #088a77;
+      --teal-dim:  #0ABFA318;
+      --navy:      #0B1F3A;
+      --navy-mid:  #122947;
+      --ink:       #0F1923;
+      --slate:     #4A5568;
+      --mist:      #F4F7FA;
+      --white:     #FFFFFF;
+      --border:    #E2E8F0;
+      --radius-sm: 8px;
+      --radius:    14px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.05);
+      --shadow:    0 4px 16px rgba(0,0,0,.08), 0 1px 4px rgba(0,0,0,.05);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5%;
+    }
+    .nav-inner {
+      max-width: 1120px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Sora', sans-serif;
+      font-size: 17px; font-weight: 700;
+      color: var(--navy); text-decoration: none;
+    }
+    .logo-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--teal);
+      box-shadow: 0 0 0 3px var(--teal-dim);
+    }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a {
+      font-size: 14px; font-weight: 500;
+      color: var(--slate); text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--navy); }
+
+    /* ── ARTICLE ── */
+    article {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 5%;
+    }
+    article h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: 44px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+    article .meta {
+      color: var(--slate);
+      font-size: 14px;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    article h2 {
+      font-family: 'Sora', sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      color: var(--navy);
+    }
+    article h3 {
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      color: var(--navy);
+    }
+    article p {
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+    article ul, article ol {
+      margin: 16px 0 16px 24px;
+    }
+    article li {
+      margin-bottom: 10px;
+      line-height: 1.7;
+    }
+    article strong {
+      color: var(--navy);
+      font-weight: 600;
+    }
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 30px 0;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .comparison-table th,
+    .comparison-table td {
+      padding: 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .comparison-table th {
+      background: var(--navy);
+      color: var(--white);
+      font-weight: 600;
+    }
+    .comparison-table tr:last-child td {
+      border-bottom: none;
+    }
+    .comparison-table tr:hover {
+      background: var(--mist);
+    }
+    .source-note {
+      background: #E8F4F8;
+      border-left: 4px solid var(--teal);
+      padding: 16px;
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      margin: 24px 0;
+    }
+    .source-note strong {
+      color: var(--teal-dark);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      padding: 60px 5%;
+      margin-top: 80px;
+    }
+    .footer-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-section h4 {
+      font-family: 'Sora', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+      opacity: 0.7;
+    }
+    .footer-section ul {
+      list-style: none;
+    }
+    .footer-section ul li {
+      margin-bottom: 12px;
+    }
+    .footer-section a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color .2s;
+    }
+    .footer-section a:hover { color: var(--teal); }
+
+    @media (max-width: 768px) {
+      article h1 { font-size: 32px; }
+      article h2 { font-size: 24px; }
+      .comparison-table th, .comparison-table td { padding: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <div class="logo-dot"></div>
+        GLP-1 Health Connect
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/guides/">Guides</a>
+        <a href="/how-we-review.html">How We Review</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <article>
+    <h1>Semaglutide vs Tirzepatide: A Complete Comparison</h1>
+    <div class="meta">Last updated: August 2026 | Sourced from FDA and NIH publications</div>
+
+    <p>If you're considering a GLP-1 telehealth program, you'll likely encounter two medications: semaglutide and tirzepatide. While both are effective for weight management and blood sugar control, they have key differences that may affect which is right for you.</p>
+
+    <h2>What Are These Medications?</h2>
+
+    <p><strong>Semaglutide</strong> (brand names: Ozempic®, Wegovy®) is a GLP-1 receptor agonist—a medication that mimics glucagon-like peptide-1, a hormone that regulates appetite and blood sugar.</p>
+
+    <p><strong>Tirzepatide</strong> (brand name: Mounjaro®) is a GLP-1 and GIP receptor agonist—it targets both GLP-1 and glucose-dependent insulinotropic peptide (GIP) receptors, making it a "dual agonist."</p>
+
+    <div class="source-note">
+      <strong>FDA Source:</strong> Both medications are FDA-approved for chronic weight management in adults with obesity or overweight with weight-related conditions. Tirzepatide was approved for weight management in November 2023. Semaglutide was approved for weight management in June 2021.
+    </div>
+
+    <h2>How They Work (Mechanism of Action)</h2>
+
+    <h3>Semaglutide</h3>
+    <p>Semaglutide works by:</p>
+    <ul>
+      <li>Stimulating GLP-1 receptors in the brain to reduce appetite</li>
+      <li>Slowing gastric emptying (the stomach empties more slowly)</li>
+      <li>Improving insulin secretion</li>
+      <li>Regulating blood sugar levels</li>
+    </ul>
+
+    <h3>Tirzepatide</h3>
+    <p>Tirzepatide has an additional mechanism—it also activates GIP receptors, which:</p>
+    <ul>
+      <li>Enhances insulin secretion in response to meals</li>
+      <li>Reduces glucagon release (which raises blood sugar)</li>
+      <li>May provide additional weight loss benefits compared to GLP-1 alone</li>
+    </ul>
+
+    <div class="source-note">
+      <strong>Clinical Evidence:</strong> Clinical trials show tirzepatide produces greater weight loss than semaglutide. However, individual responses vary, and the "best" medication depends on your specific health profile and how your body responds.
+    </div>
+
+    <h2>Efficacy: Weight Loss Comparison</h2>
+
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Medication</th>
+          <th>Maximum Dose</th>
+          <th>Average Weight Loss</th>
+          <th>Study Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Semaglutide (Wegovy)</strong></td>
+          <td>2.4 mg weekly</td>
+          <td>~18% body weight</td>
+          <td>68 weeks</td>
+        </tr>
+        <tr>
+          <td><strong>Tirzepatide (Mounjaro)</strong></td>
+          <td>15 mg weekly</td>
+          <td>~22% body weight</td>
+          <td>72 weeks</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>In clinical trials, tirzepatide demonstrated greater weight loss compared to semaglutide. However, both medications are significantly more effective than lifestyle changes alone for people with obesity.</p>
+
+    <h2>Common Side Effects</h2>
+
+    <h3>Both Medications May Cause:</h3>
+    <ul>
+      <li>Nausea (especially when starting or increasing doses)</li>
+      <li>Vomiting</li>
+      <li>Diarrhea or constipation</li>
+      <li>Stomach pain or cramping</li>
+      <li>Fatigue</li>
+      <li>Dizziness</li>
+    </ul>
+
+    <h3>Side Effects That May Differ:</h3>
+    <ul>
+      <li><strong>Semaglutide:</strong> Injection site reactions at the point where you inject the pen</li>
+      <li><strong>Tirzepatide:</strong> May have a higher rate of gastrointestinal side effects, particularly nausea, compared to semaglutide in some studies</li>
+    </ul>
+
+    <p><strong>Important:</strong> Side effects are typically mild and often decrease over time as your body adjusts to the medication. Your healthcare provider can help manage any side effects through dose adjustments or additional support.</p>
+
+    <h2>Serious Warnings and Contraindications</h2>
+
+    <div class="source-note">
+      <strong>FDA Warning:</strong> Both medications carry a black box warning about the risk of thyroid C-cell tumors (based on animal studies). They should not be used by people with a personal history of medullary thyroid cancer or a family history of multiple endocrine neoplasia syndrome type 2 (MEN 2).
+    </div>
+
+    <h3>Other Important Warnings:</h3>
+    <ul>
+      <li><strong>Pancreatitis risk:</strong> Rare cases of acute pancreatitis have been reported. Seek immediate medical attention if you experience severe abdominal pain.</li>
+      <li><strong>Diabetic retinopathy:</strong> In people with type 2 diabetes, rapid blood sugar improvement can worsen existing diabetic eye disease.</li>
+      <li><strong>Gallbladder issues:</strong> Rapid weight loss can increase the risk of gallstones.</li>
+      <li><strong>Pregnancy:</strong> Both medications may harm a developing fetus. Use effective contraception and inform your provider if you're planning to become pregnant.</li>
+    </ul>
+
+    <h2>Dosing and Administration</h2>
+
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Medication</th>
+          <th>Administration</th>
+          <th>Starting Dose</th>
+          <th>Maintenance Dose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Semaglutide</strong></td>
+          <td>Subcutaneous injection once weekly</td>
+          <td>0.25 mg</td>
+          <td>2.4 mg</td>
+        </tr>
+        <tr>
+          <td><strong>Tirzepatide</strong></td>
+          <td>Subcutaneous injection once weekly</td>
+          <td>2.5 mg</td>
+          <td>15 mg</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Both medications are injected once per week, which many patients find convenient compared to daily medications. Doses are gradually increased over several weeks to minimize side effects and allow your body to adjust.</p>
+
+    <h2>Cost and Insurance Coverage</h2>
+
+    <p>Both medications can be expensive, often ranging from $1,000–$1,500+ per month without insurance or savings programs. Insurance coverage varies significantly by plan and whether you're using the medication for weight management (off-label) versus type 2 diabetes (FDA-approved indication).</p>
+
+    <p>Most telehealth programs have partnerships with pharmacies and offer patient assistance programs to help reduce costs.</p>
+
+    <h2>Which One Might Be Right for You?</h2>
+
+    <p>Choosing between semaglutide and tirzepatide depends on several factors:</p>
+
+    <h3>Consider Semaglutide If:</h3>
+    <ul>
+      <li>You're new to GLP-1 medications and want to start with an established option</li>
+      <li>You have a personal or family history of medullary thyroid cancer (tirzepatide is also contraindicated, but semaglutide has been in use longer)</li>
+      <li>You prefer a medication that's been used for weight management since 2021</li>
+      <li>You experience significant nausea with other medications and want to start slower</li>
+    </ul>
+
+    <h3>Consider Tirzepatide If:</h3>
+    <ul>
+      <li>You're looking for potentially greater weight loss (clinical data suggests higher average results)</li>
+      <li>You have type 2 diabetes in addition to weight management goals</li>
+      <li>You've tried semaglutide without adequate results</li>
+      <li>You tolerate gastrointestinal side effects relatively well</li>
+    </ul>
+
+    <h2>The Bottom Line</h2>
+
+    <p>Both semaglutide and tirzepatide are effective medications for weight management. Tirzepatide may offer slightly greater weight loss on average, but semaglutide has been used for longer. The "best" choice depends on your individual health profile, how your body responds, and your healthcare provider's recommendation.</p>
+
+    <p>Many people on a telehealth program start with one medication and, with their provider's guidance, may switch to the other if they don't achieve desired results or experience problematic side effects.</p>
+
+    <p><strong>Always discuss your options with your telehealth provider to determine which medication is most appropriate for you.</strong></p>
+
+    <div class="source-note">
+      <strong>Medical Disclaimer:</strong> This guide is educational and not a substitute for professional medical advice. Consult your healthcare provider before starting any medication. All information is sourced from FDA.gov and peer-reviewed clinical literature as of August 2026.
+    </div>
+  </article>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/guides/">All Guides</a></li>
+            <li><a href="/how-we-review.html">Our Methodology</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/terms-of-use.html">Terms of Use</a></li>
+            <li><a href="/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+            <li><a href="/medical-disclaimer.html">Medical Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Understanding GLP-1 Program Costs | GLP-1 Health Connect</title>
+  <meta name="description" content="Complete breakdown of GLP-1 telehealth program costs: medication prices, membership fees, hidden costs, insurance vs. cash pay, and how to budget." />
+  <meta name="keywords" content="GLP-1 cost, telehealth program price, semaglutide cost, tirzepatide cost, membership fees" />
+  <meta property="og:title" content="Understanding GLP-1 Program Costs" />
+  <meta property="og:description" content="Breakdown of GLP-1 medication costs, program fees, and how to find affordable telehealth." />
+  <link rel="canonical" href="https://glp1-health-connect.vercel.app/guides/glp1-program-cost.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal:      #0ABFA3;
+      --teal-dark: #088a77;
+      --teal-dim:  #0ABFA318;
+      --navy:      #0B1F3A;
+      --navy-mid:  #122947;
+      --ink:       #0F1923;
+      --slate:     #4A5568;
+      --mist:      #F4F7FA;
+      --white:     #FFFFFF;
+      --border:    #E2E8F0;
+      --radius-sm: 8px;
+      --radius:    14px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.05);
+      --shadow:    0 4px 16px rgba(0,0,0,.08), 0 1px 4px rgba(0,0,0,.05);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5%;
+    }
+    .nav-inner {
+      max-width: 1120px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Sora', sans-serif;
+      font-size: 17px; font-weight: 700;
+      color: var(--navy); text-decoration: none;
+    }
+    .logo-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--teal);
+      box-shadow: 0 0 0 3px var(--teal-dim);
+    }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a {
+      font-size: 14px; font-weight: 500;
+      color: var(--slate); text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--navy); }
+
+    /* ── ARTICLE ── */
+    article {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 5%;
+    }
+    article h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: 44px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+    article .meta {
+      color: var(--slate);
+      font-size: 14px;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    article h2 {
+      font-family: 'Sora', sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      color: var(--navy);
+    }
+    article h3 {
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      color: var(--navy);
+    }
+    article p {
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+    article ul, article ol {
+      margin: 16px 0 16px 24px;
+    }
+    article li {
+      margin-bottom: 10px;
+      line-height: 1.7;
+    }
+    article strong {
+      color: var(--navy);
+      font-weight: 600;
+    }
+    .cost-breakdown {
+      background: var(--mist);
+      border-left: 4px solid var(--teal);
+      padding: 24px;
+      border-radius: var(--radius);
+      margin: 24px 0;
+    }
+    .cost-breakdown h4 {
+      color: var(--navy);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .cost-breakdown p {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+    .source-note {
+      background: #E8F4F8;
+      border-left: 4px solid var(--teal);
+      padding: 16px;
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      margin: 24px 0;
+    }
+    .checklist {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin: 24px 0;
+    }
+    .checklist h4 {
+      color: var(--navy);
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+    .checklist-item input {
+      margin-right: 12px;
+      margin-top: 3px;
+      cursor: pointer;
+      min-width: 16px;
+    }
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 30px 0;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .comparison-table th,
+    .comparison-table td {
+      padding: 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .comparison-table th {
+      background: var(--navy);
+      color: var(--white);
+      font-weight: 600;
+    }
+    .comparison-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      padding: 60px 5%;
+      margin-top: 80px;
+    }
+    .footer-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-section h4 {
+      font-family: 'Sora', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+      opacity: 0.7;
+    }
+    .footer-section ul {
+      list-style: none;
+    }
+    .footer-section ul li {
+      margin-bottom: 12px;
+    }
+    .footer-section a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color .2s;
+    }
+    .footer-section a:hover { color: var(--teal); }
+
+    @media (max-width: 768px) {
+      article h1 { font-size: 32px; }
+      article h2 { font-size: 24px; }
+      .comparison-table th, .comparison-table td { padding: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <div class="logo-dot"></div>
+        GLP-1 Health Connect
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/guides/">Guides</a>
+        <a href="/how-we-review.html">How We Review</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <article>
+    <h1>Understanding GLP-1 Program Costs</h1>
+    <div class="meta">Last updated: August 2026 | Guide to budgeting for GLP-1 treatment</div>
+
+    <p>Cost is one of the biggest questions when considering a GLP-1 telehealth program. These medications and programs aren't cheap, but understanding the pricing structure can help you budget and find the most affordable option for your situation.</p>
+
+    <h2>Total Cost Breakdown</h2>
+
+    <p>When budgeting for a GLP-1 program, costs typically fall into these categories:</p>
+
+    <div class="cost-breakdown">
+      <h4>1. Program Membership Fee</h4>
+      <p><strong>Range:</strong> $0–$150/month</p>
+      <p>Some programs charge a monthly membership, while others build this into the medication cost. This covers access to the provider, consultations, and program management.</p>
+    </div>
+
+    <div class="cost-breakdown">
+      <h4>2. Medication Cost</h4>
+      <p><strong>Range:</strong> $400–$1,500/month</p>
+      <p>This is the largest expense. Prices vary significantly based on:</p>
+      <ul style="margin-top: 8px; margin-left: 16px;">
+        <li>Medication type (semaglutide vs. tirzepatide)</li>
+        <li>Dose (starting doses are cheaper than maximum doses)</li>
+        <li>Generic vs. brand-name</li>
+        <li>Program partnerships and discounts</li>
+      </ul>
+    </div>
+
+    <div class="cost-breakdown">
+      <h4>3. Shipping & Handling</h4>
+      <p><strong>Range:</strong> $0–$50/month</p>
+      <p>Most programs include shipping, but some charge separately or add a small handling fee.</p>
+    </div>
+
+    <div class="cost-breakdown">
+      <h4>4. Optional Costs</h4>
+      <p><strong>Examples:</strong> Lab work, additional consultations, weight loss support programs</p>
+      <p>Some programs offer additional services for an extra fee.</p>
+    </div>
+
+    <h2>Typical Monthly Program Pricing</h2>
+
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Program</th>
+          <th>Base Price</th>
+          <th>Medication (Starting Dose)</th>
+          <th>Total Monthly (Estimated)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>SkinnyRx</strong></td>
+          <td>$199</td>
+          <td>Included</td>
+          <td>$199–$250</td>
+        </tr>
+        <tr>
+          <td><strong>TrimRx</strong></td>
+          <td>$149</td>
+          <td>Included</td>
+          <td>$149–$200</td>
+        </tr>
+        <tr>
+          <td><strong>Eden (Semaglutide)</strong></td>
+          <td>$99</td>
+          <td>Included</td>
+          <td>$99–$150</td>
+        </tr>
+        <tr>
+          <td><strong>Eden (Tirzepatide)</strong></td>
+          <td>$129</td>
+          <td>Included</td>
+          <td>$129–$200</td>
+        </tr>
+        <tr>
+          <td><strong>Fridays Health ($117)</strong></td>
+          <td>$117</td>
+          <td>Included</td>
+          <td>$117–$180</td>
+        </tr>
+        <tr>
+          <td><strong>Fridays Health ($198 Tirzepatide)</strong></td>
+          <td>$198</td>
+          <td>Included</td>
+          <td>$198–$280</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="source-note">
+      <strong>Note:</strong> Pricing is subject to change. Always verify current pricing, eligibility requirements, medication availability, fees, and program terms directly with each provider.
+    </div>
+
+    <h2>Insurance vs. Cash Pay</h2>
+
+    <h3>Using Insurance</h3>
+    <ul>
+      <li><strong>Pros:</strong> May cover 80–90% of costs if medication is approved; some insurance plans have preferred programs</li>
+      <li><strong>Cons:</strong> Requires prior authorization; may be denied for off-label weight management use; high out-of-pocket maximums</li>
+      <li><strong>Reality:</strong> Insurance coverage for weight management is inconsistent. Some plans cover it; many don't</li>
+    </ul>
+
+    <h3>Cash Pay</h3>
+    <ul>
+      <li><strong>Pros:</strong> No insurance approval needed; faster access; programs offer patient assistance and discounts</li>
+      <li><strong>Cons:</strong> Full out-of-pocket cost; can be expensive long-term</li>
+      <li><strong>Reality:</strong> Most people using telehealth GLP-1 programs pay cash or use patient assistance programs</li>
+    </ul>
+
+    <h2>Hidden Costs to Watch For</h2>
+
+    <div class="checklist">
+      <h4>Cost Considerations Checklist</h4>
+      <div class="checklist-item">
+        <input type="checkbox" id="check1">
+        <label for="check1">Cancellation fees if you want to pause or stop</label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="check2">
+        <label for="check2">Auto-shipment fees (many programs auto-ship monthly)</label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="check3">
+        <label for="check3">Additional lab work or follow-up consultations not included</label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="check4">
+        <label for="check4">Price increases when you move to higher doses</label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="check5">
+        <label for="check5">Delivery delays or replacement medications</label>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="check6">
+        <label for="check6">Support group or coaching program add-ons</label>
+      </div>
+    </div>
+
+    <h2>Ways to Save Money</h2>
+
+    <h3>1. Patient Assistance Programs</h3>
+    <p>Pharmaceutical manufacturers offer patient assistance programs that can reduce or eliminate medication costs for eligible individuals. Ask your telehealth provider about availability.</p>
+
+    <h3>2. Compare Program Pricing</h3>
+    <p>Prices vary significantly between programs. Getting quotes from multiple providers can save $50–$200/month.</p>
+
+    <h3>3. Start with a Lower Dose</h3>
+    <p>Starting doses are typically less expensive than maintenance doses. You can build up gradually, spreading costs over time.</p>
+
+    <h3>4. Verify Insurance Coverage</h3>
+    <p>Even if you typically pay cash, check with your insurance. Some plans cover GLP-1 medications for weight management.</p>
+
+    <h3>5. Consider Generic Options</h3>
+    <p>As patents expire, generic versions may become available at lower costs. Ask if your program offers generics.</p>
+
+    <h3>6. Prescription Discount Cards</h3>
+    <p>Services like GoodRx, SingleCare, or RxSaver can sometimes reduce medication costs, even for telehealth programs.</p>
+
+    <h2>Annual Cost Estimates</h2>
+
+    <p><strong>Annual budget planning:</strong> Most people on GLP-1 programs budget approximately $1,500–$2,000 per year on medication and program fees, though costs can be higher with premium programs or higher doses.</p>
+
+    <p>That works out to roughly:</p>
+    <ul>
+      <li>Low-cost programs: ~$1,500–$1,800/year</li>
+      <li>Mid-range programs: ~$2,000–$3,000/year</li>
+      <li>Premium programs: ~$3,000+/year</li>
+    </ul>
+
+    <h2>Questions to Ask Before Starting</h2>
+
+    <p>When evaluating a program, always ask:</p>
+    <ul>
+      <li>What's the exact cost breakdown (membership, medication, shipping)?</li>
+      <li>Are there discounts for paying upfront or paying in full?</li>
+      <li>What's the price increase when I move to higher doses?</li>
+      <li>Can I cancel anytime, or are there minimum commitment periods?</li>
+      <li>Are there any hidden fees or add-ons I should know about?</li>
+      <li>Does the program work with insurance, or is it cash pay only?</li>
+      <li>Are patient assistance programs available?</li>
+      <li>What's the refund or return policy if I'm not satisfied?</li>
+    </ul>
+
+    <h2>The Bottom Line</h2>
+
+    <p>GLP-1 programs are an investment in your health. While costs can be significant, most telehealth programs are more affordable than traditional in-person weight loss clinics or concierge medicine. By understanding the pricing structure and comparing options, you can find a program that fits your budget and health goals.</p>
+
+    <p><strong>Always verify current pricing directly with each provider—prices change frequently and vary by location and medication type.</strong></p>
+
+    <div class="source-note">
+      <strong>Medical Disclaimer:</strong> This guide is educational and not a substitute for professional financial or medical advice. Consult your healthcare provider and review program terms carefully before enrolling.
+    </div>
+  </article>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/guides/">All Guides</a></li>
+            <li><a href="/how-we-review.html">Our Methodology</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/terms-of-use.html">Terms of Use</a></li>
+            <li><a href="/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+            <li><a href="/medical-disclaimer.html">Medical Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple checkbox functionality for checklist
+    document.querySelectorAll('.checklist-item input').forEach(checkbox => {
+      checkbox.addEventListener('change', function() {
+        this.parentElement.style.opacity = this.checked ? '0.6' : '1';
+        this.parentElement.style.textDecoration = this.checked ? 'line-through' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>

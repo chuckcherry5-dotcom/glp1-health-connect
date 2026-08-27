@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Online GLP-1 Telehealth Works | GLP-1 Health Connect</title>
+  <meta name="description" content="Step-by-step explanation of the GLP-1 telehealth process. Learn what to expect from enrollment through ongoing medication management." />
+  <meta name="keywords" content="telehealth process, GLP-1 enrollment, online doctor consultation, medication delivery" />
+  <meta property="og:title" content="How Online GLP-1 Telehealth Works" />
+  <meta property="og:description" content="Complete guide to the GLP-1 telehealth enrollment and treatment process." />
+  <link rel="canonical" href="https://glp1-health-connect.vercel.app/guides/how-online-glp1-telehealth-works.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal:      #0ABFA3;
+      --teal-dark: #088a77;
+      --teal-dim:  #0ABFA318;
+      --navy:      #0B1F3A;
+      --navy-mid:  #122947;
+      --ink:       #0F1923;
+      --slate:     #4A5568;
+      --mist:      #F4F7FA;
+      --white:     #FFFFFF;
+      --border:    #E2E8F0;
+      --radius-sm: 8px;
+      --radius:    14px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.05);
+      --shadow:    0 4px 16px rgba(0,0,0,.08), 0 1px 4px rgba(0,0,0,.05);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5%;
+    }
+    .nav-inner {
+      max-width: 1120px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Sora', sans-serif;
+      font-size: 17px; font-weight: 700;
+      color: var(--navy); text-decoration: none;
+    }
+    .logo-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--teal);
+      box-shadow: 0 0 0 3px var(--teal-dim);
+    }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a {
+      font-size: 14px; font-weight: 500;
+      color: var(--slate); text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--navy); }
+
+    /* ── ARTICLE ── */
+    article {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 5%;
+    }
+    article h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: 44px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+    article .meta {
+      color: var(--slate);
+      font-size: 14px;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    article h2 {
+      font-family: 'Sora', sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      color: var(--navy);
+    }
+    article h3 {
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      color: var(--navy);
+    }
+    article p {
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+    article ul {
+      margin: 16px 0 16px 24px;
+    }
+    article li {
+      margin-bottom: 10px;
+      line-height: 1.7;
+    }
+    .step-box {
+      background: var(--mist);
+      border: 2px solid var(--teal);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin: 28px 0;
+    }
+    .step-number {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background: var(--teal);
+      color: var(--white);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    .step-box h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+    .step-box p {
+      margin-bottom: 12px;
+    }
+    .step-box ul {
+      margin: 12px 0 0 24px;
+    }
+    .step-box li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+    .timeline-visual {
+      background: linear-gradient(to bottom, var(--teal), var(--teal-dark));
+      border-radius: var(--radius);
+      padding: 30px;
+      color: var(--white);
+      margin: 40px 0;
+      text-align: center;
+    }
+    .timeline-visual p {
+      margin-bottom: 0;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      padding: 60px 5%;
+      margin-top: 80px;
+    }
+    .footer-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-section h4 {
+      font-family: 'Sora', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+      opacity: 0.7;
+    }
+    .footer-section ul {
+      list-style: none;
+    }
+    .footer-section ul li {
+      margin-bottom: 12px;
+    }
+    .footer-section a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color .2s;
+    }
+    .footer-section a:hover { color: var(--teal); }
+
+    @media (max-width: 768px) {
+      article h1 { font-size: 32px; }
+      article h2 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <div class="logo-dot"></div>
+        GLP-1 Health Connect
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/guides/">Guides</a>
+        <a href="/how-we-review.html">How We Review</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <article>
+    <h1>How Online GLP-1 Telehealth Works</h1>
+    <div class="meta">Last updated: August 2026 | Complete process breakdown</div>
+
+    <p>The GLP-1 telehealth process is designed to be convenient and straightforward. Here's a step-by-step breakdown of how it works from start to finish.</p>
+
+    <h2>The 7-Step Process</h2>
+
+    <div class="step-box">
+      <div class="step-number">1</div>
+      <h3>Sign Up & Complete Your Profile</h3>
+      <p>You start by visiting the program's website and creating an account. You'll provide basic information like your name, email, and password.</p>
+      <ul>
+        <li>Takes 2-3 minutes</li>
+        <li>No medical information yet—just account setup</li>
+      </ul>
+    </div>
+
+    <div class="step-box">
+      <div class="step-number">2</div>
+      <h3>Complete Your Medical History Assessment</h3>
+      <p>Next, you fill out a detailed health questionnaire. This is important for your safety and helps the provider determine if GLP-1 is appropriate for you.</p>
+      <ul>
+        <li>Takes 10-15 minutes</li>
+        <li>Questions cover: medical conditions, current medications, allergies, family history, lifestyle factors</li>
+        <li>Be honest and thorough—this information ensures your safety</li>
+        <li>Your answers are used to screen for contraindications (conditions where GLP-1 wouldn't be safe)</li>
+      </ul>
+    </div>
+
+    <div class="step-box">
+      <div class="step-number">3</div>
+      <h3>Consultation with a Healthcare Provider</h3>
+      <p>A licensed physician, nurse practitioner, or physician assistant reviews your health information and conducts a virtual consultation—usually via secure video, phone, or video call.</p>
+      <ul>
+        <li>Takes 15-30 minutes (typically done within 24 hours of submitting your health form)</li>
+        <li>The provider verifies your health history and confirms you're a good candidate</li>
+        <li>They discuss your goals, expectations, and potential side effects</li>
+        <li>They answer any questions you have about the treatment</li>
+        <li>If you're not approved, the program will explain why and may offer alternatives</li>
+      </ul>
+    </div>
+
+    <div class="step-box">
+      <div class="step-number">4</div>
+      <h3>Receive Your Prescription & Complete Payment</h3>
+      <p>If approved, the provider sends your prescription to the program's pharmacy. You complete payment, typically through the online portal.</p>
+      <ul>
+        <li>Payment happens immediately after approval</li>
+        <li>Most programs charge for your first month's medication and program fee upfront</li>
+        <li>You should receive a payment confirmation and order receipt</li>
+        <li>Your prescription is filled and prepared for shipment</li>
+      </ul>
+    </div>
+
+    <div class="step-box">
+      <div class="step-number">5</div>
+      <h3>Receive Your Medication & Supplies</h3>
+      <p>Your medication, injection supplies (needles, syringes, alcohol pads), and instructions are shipped to your address.</p>
+      <ul>
+        <li>Shipping typically takes 3-7 business days</li>
+        <li>You'll receive a tracking number so you know when to expect your package</li>
+        <li>The package arrives in discreet, temperature-controlled packaging</li>
+        <li>Included materials: medication, injectors/pens, needles, syringes, alcohol wipes, instruction guides</li>
+        <li>Store medication in your refrigerator as instructed</li>
+      </ul>
+    </div>
+
+    <div class="step-box">
+      <div class="step-number">6</div>
+      <h3>Begin Treatment & Regular Follow-ups</h3>
+      <p>You start injecting your medication as prescribed. Regular follow-up appointments help your provider monitor your progress and adjust your dose.</p>
+      <ul>
+        <li><strong>During dose escalation (weeks 1-12):</strong> Monthly check-ins via telehealth</li>
+        <li><strong>What happens at these visits:</strong> Provider checks how you're tolerating the medication, reviews any side effects, adjusts your dose if needed, answers questions</li>
+        <li><strong>Ongoing (after month 3):</strong> Quarterly check-ins to monitor progress and refill prescriptions</li>
+        <li><strong>Between appointments:</strong> You can message your provider with questions through the patient portal</li>
+        <li><strong>Self-monitoring:</strong> You track your weight, energy levels, and any side effects</li>
+      </ul>
+    </div>
+
+    <div class="step-box">
+      <div class="step-number">7</div>
+      <h3>Ongoing Medication Management & Refills</h3>
+      <p>Your prescription refills automatically each month (or as prescribed), and new medication is delivered on schedule.</p>
+      <ul>
+        <li><strong>Auto-refill:</strong> Most programs automatically ship your monthly medication unless you pause or cancel</li>
+        <li><strong>Cost continues:</strong> You're charged monthly for your membership and medication</li>
+        <li><strong>Dose adjustments:</strong> Your provider may increase your dose every 2-4 weeks during the initial phase</li>
+        <li><strong>Continuing appointments:</strong> Quarterly telehealth check-ins continue as long as you're on the medication</li>
+        <li><strong>Duration:</strong> You typically stay on GLP-1 medication long-term, but your provider will discuss this with you</li>
+      </ul>
+    </div>
+
+    <div class="timeline-visual">
+      <p><strong>Total time from sign-up to receiving medication: Usually 3-7 days</strong></p>
+    </div>
+
+    <h2>What You'll Need to Get Started</h2>
+
+    <h3>Technical Requirements</h3>
+    <ul>
+      <li>Internet connection and a device for video/phone consultations</li>
+      <li>Email address for account and communications</li>
+      <li>A valid payment method (credit card or debit card)</li>
+    </ul>
+
+    <h3>Medical Requirements</h3>
+    <ul>
+      <li>Age 18 or older</li>
+      <li>Valid ID (some programs may require verification)</li>
+      <li>Must not have contraindications to GLP-1 medications</li>
+      <li>Willingness to follow provider recommendations</li>
+    </ul>
+
+    <h3>Physical Requirements</h3>
+    <ul>
+      <li>Refrigerator space to store medication</li>
+      <li>Comfortable place to inject the medication (usually thigh, abdomen, or upper arm)</li>
+      <li>Ability to self-inject or have someone help you (some programs offer support if you're nervous)</li>
+    </ul>
+
+    <h2>Important Details to Know</h2>
+
+    <h3>Privacy & Security</h3>
+    <p>Your medical information is protected by HIPAA (Health Insurance Portability and Accountability Act), the federal law that protects patient privacy. Telehealth consultations should occur on secure, encrypted platforms.</p>
+
+    <h3>State Licensing</h3>
+    <p>Your provider must be licensed to practice in your state. Some programs only operate in certain states, so verify your state is covered when you sign up.</p>
+
+    <h3>Prescription Verification</h3>
+    <p>Your prescription can be verified with any pharmacy—it's not locked to the program's pharmacy, though most people use the program's service for convenience.</p>
+
+    <h3>What Happens if You Have Problems</h3>
+    <ul>
+      <li><strong>Side effects:</strong> Contact your provider immediately. They can adjust your dose or recommend management strategies</li>
+      <li><strong>Medication not working:</strong> Discuss with your provider—they may adjust your dose or try a different medication</li>
+      <li><strong>Missed appointment:</strong> Most programs allow you to reschedule easily through the patient portal</li>
+      <li><strong>Medication delivery issue:</strong> Contact customer support—they typically reship or provide solutions</li>
+      <li><strong>Want to stop:</strong> Talk to your provider first. You can pause or cancel your subscription anytime</li>
+    </ul>
+
+    <h2>Timeline Summary</h2>
+
+    <ul>
+      <li><strong>Day 1:</strong> Sign up and complete medical assessment</li>
+      <li><strong>Day 1-2:</strong> Virtual consultation with provider</li>
+      <li><strong>Day 2-3:</strong> Prescription issued and payment completed</li>
+      <li><strong>Day 3-7:</strong> Medication shipped and arrives</li>
+      <li><strong>Week 2:</strong> You start your first injection</li>
+      <li><strong>Week 3-4:</strong> First follow-up appointment (usually month 1)</li>
+      <li><strong>Ongoing:</strong> Monthly appointments (weeks 2-12), then quarterly afterward</li>
+    </ul>
+
+    <h2>The Bottom Line</h2>
+
+    <p>GLP-1 telehealth makes weight management and treatment accessible from home. The entire process is designed to be convenient, with proper medical oversight at each step. As long as you're comfortable with self-injection and can attend virtual appointments, telehealth is a viable option for accessing GLP-1 medications.</p>
+
+    <p>The key to success is following your provider's recommendations, attending follow-up appointments, and communicating any concerns or side effects promptly.</p>
+  </article>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/guides/">All Guides</a></li>
+            <li><a href="/how-we-review.html">Our Methodology</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/terms-of-use.html">Terms of Use</a></li>
+            <li><a href="/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+            <li><a href="/medical-disclaimer.html">Medical Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

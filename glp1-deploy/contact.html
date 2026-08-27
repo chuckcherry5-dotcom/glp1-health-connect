@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | GLP-1 Health Connect</title>
+  <meta name="description" content="Contact GLP-1 Health Connect with questions, feedback, or to report inaccuracies. We read and respond to all inquiries." />
+  <meta name="keywords" content="contact, feedback, questions, support" />
+  <meta property="og:title" content="Contact GLP-1 Health Connect" />
+  <meta property="og:description" content="Get in touch with us—we'd love to hear from you." />
+  <link rel="canonical" href="https://glp1-health-connect.vercel.app/contact.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal:      #0ABFA3;
+      --teal-dark: #088a77;
+      --teal-dim:  #0ABFA318;
+      --navy:      #0B1F3A;
+      --navy-mid:  #122947;
+      --ink:       #0F1923;
+      --slate:     #4A5568;
+      --mist:      #F4F7FA;
+      --white:     #FFFFFF;
+      --border:    #E2E8F0;
+      --radius-sm: 8px;
+      --radius:    14px;
+      --radius-lg: 20px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5%;
+    }
+    .nav-inner {
+      max-width: 1120px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Sora', sans-serif;
+      font-size: 17px; font-weight: 700;
+      color: var(--navy); text-decoration: none;
+    }
+    .logo-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--teal);
+      box-shadow: 0 0 0 3px var(--teal-dim);
+    }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a {
+      font-size: 14px; font-weight: 500;
+      color: var(--slate); text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--navy); }
+
+    article {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 5%;
+    }
+    article h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: 44px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+    article p {
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+    .contact-form {
+      background: var(--mist);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      margin: 40px 0;
+    }
+    .form-group {
+      margin-bottom: 24px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: var(--navy);
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 15px;
+      transition: border-color .2s;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--teal);
+      box-shadow: 0 0 0 3px var(--teal-dim);
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .submit-btn {
+      background: var(--teal);
+      color: var(--white);
+      border: none;
+      padding: 14px 32px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 15px;
+      transition: background .2s;
+      width: 100%;
+    }
+    .submit-btn:hover {
+      background: var(--teal-dark);
+    }
+    .note {
+      background: #FFF3CD;
+      border-left: 4px solid #FFC107;
+      padding: 16px;
+      border-radius: var(--radius-sm);
+      margin: 20px 0;
+      font-size: 14px;
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      padding: 60px 5%;
+      margin-top: 80px;
+    }
+    .footer-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-section h4 {
+      font-family: 'Sora', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+      opacity: 0.7;
+    }
+    .footer-section ul {
+      list-style: none;
+    }
+    .footer-section ul li {
+      margin-bottom: 12px;
+    }
+    .footer-section a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color .2s;
+    }
+    .footer-section a:hover { color: var(--teal); }
+
+    @media (max-width: 768px) {
+      article h1 { font-size: 32px; }
+      .contact-form { padding: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <div class="logo-dot"></div>
+        GLP-1 Health Connect
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/guides/">Guides</a>
+        <a href="/how-we-review.html">How We Review</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <article>
+    <h1>Get in Touch</h1>
+
+    <p>Have a question? Found an inaccuracy? Want to share feedback about a program? We'd love to hear from you.</p>
+
+    <p>Please note: We cannot provide medical advice or serve as a substitute for your healthcare provider. If you have medical questions or concerns, please consult with a qualified healthcare professional.</p>
+
+    <div class="note">
+      <strong>Support Note:</strong> This is an independent educational resource. For issues with a specific program, please contact that program's customer support directly.
+    </div>
+
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us what you think..." required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
+    <p style="text-align: center; color: var(--slate); font-size: 14px; margin-top: 24px;">
+      We read every message and respond within 2-3 business days.
+    </p>
+
+    <h2 style="margin-top: 60px; font-family: 'Sora', sans-serif; font-size: 28px; font-weight: 600; color: var(--navy); margin-bottom: 16px;">Other Ways to Reach Us</h2>
+
+    <p>Found an inaccuracy? <a href="/how-we-review.html">Read about our correction process →</a></p>
+
+    <p>Have program feedback? Help us improve by sharing your experience with a specific provider.</p>
+  </article>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/guides/">All Guides</a></li>
+            <li><a href="/how-we-review.html">Our Methodology</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/terms-of-use.html">Terms of Use</a></li>
+            <li><a href="/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+            <li><a href="/medical-disclaimer.html">Medical Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

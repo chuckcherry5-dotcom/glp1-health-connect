@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Questions Before Choosing a GLP-1 Provider | GLP-1 Health Connect</title>
+  <meta name="description" content="Printable checklist of essential questions to ask before selecting a GLP-1 telehealth provider. Evaluate and compare programs effectively." />
+  <meta name="keywords" content="GLP-1 provider, choosing telehealth, evaluation checklist, program comparison" />
+  <meta property="og:title" content="Questions Before Choosing a GLP-1 Provider" />
+  <meta property="og:description" content="Essential questions and printable checklist for selecting the right GLP-1 telehealth program." />
+  <link rel="canonical" href="https://glp1-health-connect.vercel.app/guides/questions-before-choosing-glp1-provider.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal:      #0ABFA3;
+      --teal-dark: #088a77;
+      --teal-dim:  #0ABFA318;
+      --navy:      #0B1F3A;
+      --navy-mid:  #122947;
+      --ink:       #0F1923;
+      --slate:     #4A5568;
+      --mist:      #F4F7FA;
+      --white:     #FFFFFF;
+      --border:    #E2E8F0;
+      --radius-sm: 8px;
+      --radius:    14px;
+      --radius-lg: 20px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5%;
+    }
+    .nav-inner {
+      max-width: 1120px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Sora', sans-serif;
+      font-size: 17px; font-weight: 700;
+      color: var(--navy); text-decoration: none;
+    }
+    .logo-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--teal);
+      box-shadow: 0 0 0 3px var(--teal-dim);
+    }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a {
+      font-size: 14px; font-weight: 500;
+      color: var(--slate); text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--navy); }
+
+    /* ── ARTICLE ── */
+    article {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 5%;
+    }
+    article h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: 44px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+    article .meta {
+      color: var(--slate);
+      font-size: 14px;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    article h2 {
+      font-family: 'Sora', sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      color: var(--navy);
+    }
+    article h3 {
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      color: var(--navy);
+    }
+    article p {
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+    article ul {
+      margin: 16px 0 16px 24px;
+    }
+    article li {
+      margin-bottom: 10px;
+      line-height: 1.7;
+    }
+    .question-group {
+      background: var(--mist);
+      border-left: 4px solid var(--teal);
+      padding: 24px;
+      border-radius: var(--radius);
+      margin: 24px 0;
+    }
+    .question-group h4 {
+      color: var(--navy);
+      margin-bottom: 16px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .question-group ul {
+      margin: 0;
+    }
+    .question-group li {
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+    .printable-checklist {
+      background: var(--white);
+      border: 2px dashed var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin: 40px 0;
+    }
+    .printable-checklist h3 {
+      margin-top: 0;
+      border-bottom: 2px solid var(--teal);
+      padding-bottom: 16px;
+    }
+    .checkbox-row {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      font-size: 14px;
+      padding: 8px;
+    }
+    .checkbox-row input {
+      min-width: 20px;
+      height: 20px;
+      margin-right: 12px;
+      margin-top: 2px;
+      cursor: pointer;
+      accent-color: var(--teal);
+    }
+    .checkbox-row label {
+      cursor: pointer;
+      flex-grow: 1;
+      line-height: 1.5;
+    }
+    .print-button {
+      background: var(--navy);
+      color: var(--white);
+      border: none;
+      padding: 12px 28px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 14px;
+      margin: 20px 0;
+      transition: background .2s;
+    }
+    .print-button:hover {
+      background: var(--navy-mid);
+    }
+
+    @media print {
+      nav { display: none; }
+      footer { display: none; }
+      article { padding: 0; }
+      .print-button { display: none; }
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      padding: 60px 5%;
+      margin-top: 80px;
+    }
+    .footer-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-section h4 {
+      font-family: 'Sora', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+      opacity: 0.7;
+    }
+    .footer-section ul {
+      list-style: none;
+    }
+    .footer-section ul li {
+      margin-bottom: 12px;
+    }
+    .footer-section a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color .2s;
+    }
+    .footer-section a:hover { color: var(--teal); }
+
+    @media (max-width: 768px) {
+      article h1 { font-size: 32px; }
+      article h2 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <div class="logo-dot"></div>
+        GLP-1 Health Connect
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/guides/">Guides</a>
+        <a href="/how-we-review.html">How We Review</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <article>
+    <h1>Essential Questions Before Choosing a GLP-1 Provider</h1>
+    <div class="meta">Last updated: August 2026 | Evaluation and comparison guide</div>
+
+    <p>Choosing a GLP-1 telehealth provider is an important health decision. Before committing, it's essential to ask the right questions to ensure you select a program that's reputable, safe, and right for your needs.</p>
+
+    <h2>Questions About Medical Oversight</h2>
+
+    <div class="question-group">
+      <h4>Medical Credentials & Supervision</h4>
+      <ul>
+        <li>Are your providers licensed physicians, nurse practitioners, or physician assistants?</li>
+        <li>Are providers licensed in my state?</li>
+        <li>Do physicians review and supervise all prescriptions?</li>
+        <li>Is there a specific provider I'll work with, or does it vary?</li>
+        <li>Can I request a provider with specific experience or specialties?</li>
+      </ul>
+    </div>
+
+    <div class="question-group">
+      <h4>Initial Evaluation & Assessment</h4>
+      <ul>
+        <li>Will I have a consultation before being prescribed medication?</li>
+        <li>How thorough is the health screening process?</li>
+        <li>Do you check for contraindications or conditions that would make GLP-1 unsafe for me?</li>
+        <li>Will you review my current medications for potential interactions?</li>
+        <li>What if I'm not approved—is there a refund or credit?</li>
+      </ul>
+    </div>
+
+    <div class="question-group">
+      <h4>Ongoing Medical Support</h4>
+      <ul>
+        <li>How often will I have follow-up appointments after starting?</li>
+        <li>Can I reach a provider if I experience side effects between appointments?</li>
+        <li>How are dose adjustments made, and how often?</li>
+        <li>Will you monitor for side effects or complications?</li>
+        <li>Can I message my provider, or only schedule formal appointments?</li>
+      </ul>
+    </div>
+
+    <h2>Questions About Medication & Costs</h2>
+
+    <div class="question-group">
+      <h4>Pricing & Fees</h4>
+      <ul>
+        <li>What's the exact cost breakdown (membership, medication, shipping)?</li>
+        <li>Are there hidden fees I should know about?</li>
+        <li>What happens to the cost when I move to higher doses?</li>
+        <li>Do you offer patient assistance programs or discounts?</li>
+        <li>Can I pay out-of-pocket or must I use a specific payment method?</li>
+      </ul>
+    </div>
+
+    <div class="question-group">
+      <h4>Medication Selection & Options</h4>
+      <ul>
+        <li>What medications do you offer (semaglutide, tirzepatide, etc.)?</li>
+        <li>Can I request a specific medication or brand?</li>
+        <li>If I have problems with one medication, can I switch to another?</li>
+        <li>Do you prescribe generic or brand-name medications?</li>
+        <li>How much does it cost to switch medications?</li>
+      </ul>
+    </div>
+
+    <div class="question-group">
+      <h4>Insurance & Coverage</h4>
+      <ul>
+        <li>Do you work with insurance, or is it cash pay only?</li>
+        <li>Will you submit claims to my insurance?</li>
+        <li>Can you help me understand my insurance coverage?</li>
+        <li>What's your policy if insurance denies coverage?</li>
+      </ul>
+    </div>
+
+    <h2>Questions About Program Quality & Support</h2>
+
+    <div class="question-group">
+      <h4>Customer Support & Communication</h4>
+      <ul>
+        <li>What hours is customer support available?</li>
+        <li>How do I contact support (phone, email, chat)?</li>
+        <li>What's the typical response time for questions?</li>
+        <li>Is there 24/7 emergency support if I have serious side effects?</li>
+        <li>Do you have a patient app or online portal for scheduling?</li>
+      </ul>
+    </div>
+
+    <div class="question-group">
+      <h4>Education & Support Services</h4>
+      <ul>
+        <li>Do you provide education about the medication and how to inject it?</li>
+        <li>Is nutrition or lifestyle coaching included?</li>
+        <li>Are there community support groups or coaching calls?</li>
+        <li>Do you provide resources about side effects and how to manage them?</li>
+      </ul>
+    </div>
+
+    <div class="question-group">
+      <h4>Medication Delivery & Logistics</h4>
+      <ul>
+        <li>How quickly will I receive my medication after approval?</li>
+        <li>Is shipping included, or is there a separate cost?</li>
+        <li>What's your policy if medication is lost or damaged in transit?</li>
+        <li>Do you provide needles, syringes, and other injection supplies?</li>
+        <li>Where will the medication be shipped from (what state)?</li>
+      </ul>
+    </div>
+
+    <h2>Questions About Policies & Commitments</h2>
+
+    <div class="question-group">
+      <h4>Commitment & Cancellation Policies</h4>
+      <ul>
+        <li>Are there any minimum commitment periods?</li>
+        <li>Can I cancel anytime, or are there penalties?</li>
+        <li>Can I pause my subscription temporarily?</li>
+        <li>What happens to my unused medication if I stop?</li>
+        <li>Will you refund any unused portions of my payment?</li>
+      </ul>
+    </div>
+
+    <div class="question-group">
+      <h4>Transparency & Disclaimers</h4>
+      <ul>
+        <li>Do you clearly explain the risks and potential side effects?</li>
+        <li>Do you disclose that this is off-label use (for weight management)?</li>
+        <li>Are there any contraindications I should know about?</li>
+        <li>Do you provide a clear medical disclaimer?</li>
+        <li>Are your marketing claims accurate and evidence-based?</li>
+      </ul>
+    </div>
+
+    <div class="question-group">
+      <h4>Company Background & Credibility</h4>
+      <ul>
+        <li>How long has the company been in business?</li>
+        <li>Are they listed with the Better Business Bureau or similar?</li>
+        <li>Do independent reviews or testimonials exist from verified patients?</li>
+        <li>Have they been subject to regulatory actions or warnings?</li>
+        <li>Are they transparent about how they use affiliate marketing (if applicable)?</li>
+      </ul>
+    </div>
+
+    <h2>Printable Evaluation Checklist</h2>
+
+    <button class="print-button" onclick="window.print();">🖨️ Print This Checklist</button>
+
+    <div class="printable-checklist">
+      <h3>GLP-1 Provider Comparison Checklist</h3>
+      <p style="margin-bottom: 20px; font-size: 14px; color: var(--slate);">Use this checklist to compare multiple providers. Print it and fill it out for each program you're considering.</p>
+
+      <p style="margin-bottom: 16px; font-weight: 600;">Program Name: _________________ Contact: _________________</p>
+
+      <h4 style="margin-top: 20px; margin-bottom: 12px; font-size: 15px; font-weight: 600; color: var(--navy);">Medical Oversight</h4>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check1">
+        <label for="check1">Licensed providers (MD, NP, PA) in my state</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check2">
+        <label for="check2">Initial medical consultation required</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check3">
+        <label for="check3">Regular follow-up appointments (frequency: ___)</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check4">
+        <label for="check4">Ability to message provider between appointments</label>
+      </div>
+
+      <h4 style="margin-top: 20px; margin-bottom: 12px; font-size: 15px; font-weight: 600; color: var(--navy);">Costs & Payment</h4>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check5">
+        <label for="check5">Total monthly cost: $_____ (transparent breakdown)</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check6">
+        <label for="check6">No hidden or surprise fees</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check7">
+        <label for="check7">Patient assistance programs available</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check8">
+        <label for="check8">Can cancel anytime without penalty</label>
+      </div>
+
+      <h4 style="margin-top: 20px; margin-bottom: 12px; font-size: 15px; font-weight: 600; color: var(--navy);">Medications & Delivery</h4>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check9">
+        <label for="check9">Offers my preferred medication(s)</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check10">
+        <label for="check10">Shipping included at no extra cost</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check11">
+        <label for="check11">Provides injection supplies (needles, syringes)</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check12">
+        <label for="check12">Clear policy for lost or damaged medication</label>
+      </div>
+
+      <h4 style="margin-top: 20px; margin-bottom: 12px; font-size: 15px; font-weight: 600; color: var(--navy);">Support & Communication</h4>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check13">
+        <label for="check13">Customer support available (hours: ___)</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check14">
+        <label for="check14">Multiple contact methods (phone, email, chat)</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check15">
+        <label for="check15">Educational resources about the medication</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check16">
+        <label for="check16">Nutrition or lifestyle support included</label>
+      </div>
+
+      <h4 style="margin-top: 20px; margin-bottom: 12px; font-size: 15px; font-weight: 600; color: var(--navy);">Transparency & Safety</h4>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check17">
+        <label for="check17">Clear explanation of risks and side effects</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check18">
+        <label for="check18">Transparent about off-label use for weight management</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check19">
+        <label for="check19">No unrealistic claims or guarantees</label>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="check20">
+        <label for="check20">Good reviews from verified patients</label>
+      </div>
+
+      <p style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 13px; color: var(--slate);">
+        <strong>Overall Assessment:</strong> How comfortable do you feel with this program? Scale 1-10: _____<br>
+        <strong>Notes:</strong> ________________________________________________________________
+      </p>
+    </div>
+
+    <h2>Red Flags: What to Avoid</h2>
+
+    <p>Don't use a program if:</p>
+    <ul>
+      <li>They don't require an initial medical consultation</li>
+      <li>They guarantee specific weight loss results</li>
+      <li>They don't screen for contraindications</li>
+      <li>They have no customer support or responsive communication</li>
+      <li>They avoid discussing risks and side effects</li>
+      <li>They pressure you to commit long-term without a trial period</li>
+      <li>They're not transparent about their affiliate relationships</li>
+      <li>They operate without proper medical licensing or oversight</li>
+    </ul>
+
+    <h2>Final Recommendation</h2>
+
+    <p>Take time to evaluate multiple programs. Ask these questions, compare answers, and choose the provider that best aligns with your needs. The "cheapest" option isn't always the best—prioritize medical oversight, support quality, and transparency.</p>
+
+    <p>A good GLP-1 telehealth program should feel like a genuine partnership with healthcare professionals who care about your safety and success.</p>
+  </article>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/guides/">All Guides</a></li>
+            <li><a href="/how-we-review.html">Our Methodology</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/terms-of-use.html">Terms of Use</a></li>
+            <li><a href="/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+            <li><a href="/medical-disclaimer.html">Medical Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

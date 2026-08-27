@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Review Methodology | GLP-1 Health Connect</title>
+  <meta name="description" content="Learn how we research and compare GLP-1 programs. Our commitment to independent analysis, data sources, and regular updates." />
+  <meta name="keywords" content="review methodology, program comparison, research process, independent review" />
+  <meta property="og:title" content="Our Review Methodology" />
+  <meta property="og:description" content="How we evaluate and compare GLP-1 telehealth programs with transparency and integrity." />
+  <link rel="canonical" href="https://glp1-health-connect.vercel.app/how-we-review.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal:      #0ABFA3;
+      --teal-dark: #088a77;
+      --teal-dim:  #0ABFA318;
+      --navy:      #0B1F3A;
+      --navy-mid:  #122947;
+      --ink:       #0F1923;
+      --slate:     #4A5568;
+      --mist:      #F4F7FA;
+      --white:     #FFFFFF;
+      --border:    #E2E8F0;
+      --radius-sm: 8px;
+      --radius:    14px;
+      --radius-lg: 20px;
+      --shadow:    0 4px 16px rgba(0,0,0,.08), 0 1px 4px rgba(0,0,0,.05);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5%;
+    }
+    .nav-inner {
+      max-width: 1120px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Sora', sans-serif;
+      font-size: 17px; font-weight: 700;
+      color: var(--navy); text-decoration: none;
+    }
+    .logo-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--teal);
+      box-shadow: 0 0 0 3px var(--teal-dim);
+    }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a {
+      font-size: 14px; font-weight: 500;
+      color: var(--slate); text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--navy); }
+
+    article {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 5%;
+    }
+    article h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: 44px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+    article h2 {
+      font-family: 'Sora', sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      color: var(--navy);
+    }
+    article h3 {
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      color: var(--navy);
+    }
+    article p {
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+    article ul {
+      margin: 16px 0 16px 24px;
+    }
+    article li {
+      margin-bottom: 10px;
+    }
+    .criteria-box {
+      background: var(--mist);
+      border-left: 4px solid var(--teal);
+      padding: 24px;
+      border-radius: var(--radius);
+      margin: 24px 0;
+    }
+    .criteria-box h3 {
+      margin-top: 0;
+      color: var(--navy);
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      padding: 60px 5%;
+      margin-top: 80px;
+    }
+    .footer-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-section h4 {
+      font-family: 'Sora', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+      opacity: 0.7;
+    }
+    .footer-section ul {
+      list-style: none;
+    }
+    .footer-section ul li {
+      margin-bottom: 12px;
+    }
+    .footer-section a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color .2s;
+    }
+    .footer-section a:hover { color: var(--teal); }
+
+    @media (max-width: 768px) {
+      article h1 { font-size: 32px; }
+      article h2 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <div class="logo-dot"></div>
+        GLP-1 Health Connect
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/guides/">Guides</a>
+        <a href="/how-we-review.html">How We Review</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <article>
+    <h1>Our Review Methodology</h1>
+
+    <p>At GLP-1 Health Connect, we believe transparency is essential. This page explains how we research, evaluate, and compare GLP-1 telehealth programs to help you make informed decisions.</p>
+
+    <h2>Our Commitment to Independence</h2>
+
+    <p>We evaluate programs based on objective criteria, not based on which programs pay us the most. While we earn affiliate commissions when users enroll in programs through our links, these commissions do not influence our program rankings or recommendations.</p>
+
+    <p>Our goal is to provide honest, evidence-based information that serves your interests—not to promote specific programs.</p>
+
+    <h2>Evaluation Criteria</h2>
+
+    <div class="criteria-box">
+      <h3>Medical Oversight & Safety</h3>
+      <ul>
+        <li>Are providers licensed and credentialed in the states they serve?</li>
+        <li>Does the program require an initial medical consultation?</li>
+        <li>Is there ongoing medical supervision and regular follow-up?</li>
+        <li>Do they screen for contraindications and safety concerns?</li>
+        <li>Is there emergency support if complications occur?</li>
+      </ul>
+    </div>
+
+    <div class="criteria-box">
+      <h3>Transparency & Honesty</h3>
+      <ul>
+        <li>Are pricing and costs clearly disclosed upfront?</li>
+        <li>Do they accurately represent medications, efficacy, and side effects?</li>
+        <li>Are they transparent about affiliate relationships?</li>
+        <li>Do they avoid unrealistic guarantees or exaggerated claims?</li>
+        <li>Are terms of service clear and fair?</li>
+      </ul>
+    </div>
+
+    <div class="criteria-box">
+      <h3>Program Quality & Support</h3>
+      <ul>
+        <li>What support do they provide (consultations, education, coaching)?</li>
+        <li>How responsive is their customer service?</li>
+        <li>Is there a patient app or portal for communication?</li>
+        <li>Do they offer options for dose adjustment or medication switching?</li>
+        <li>What's the cancellation and refund policy?</li>
+      </ul>
+    </div>
+
+    <div class="criteria-box">
+      <h3>Medication & Delivery</h3>
+      <ul>
+        <li>What medications do they offer?</li>
+        <li>Is shipping included and reliable?</li>
+        <li>Are injection supplies provided?</li>
+        <li>What happens if medication is lost or damaged?</li>
+        <li>Is there flexibility in delivery schedules?</li>
+      </ul>
+    </div>
+
+    <div class="criteria-box">
+      <h3>Cost & Value</h3>
+      <ul>
+        <li>Are prices competitive with similar programs?</li>
+        <li>Do they offer payment plans or assistance programs?</li>
+        <li>Is the value proposition clear (what you get for your money)?</li>
+        <li>Are there hidden or unexpected costs?</li>
+      </ul>
+    </div>
+
+    <h2>Our Research Process</h2>
+
+    <h3>Primary Research</h3>
+    <ul>
+      <li>Direct communication with program representatives</li>
+      <li>Review of program websites, terms of service, and pricing</li>
+      <li>Analysis of provider credentials and licensing</li>
+      <li>Evaluation of customer testimonials and reviews (when available)</li>
+    </ul>
+
+    <h3>Secondary Research</h3>
+    <ul>
+      <li>Review of medical literature and clinical evidence</li>
+      <li>Analysis of regulatory actions or complaints</li>
+      <li>Comparison of programs based on objective metrics</li>
+      <li>Follow-up research on program updates and changes</li>
+    </ul>
+
+    <h2>Program Reviews & Updates</h2>
+
+    <p><strong>Last Reviewed (Site): August 2026</strong></p>
+
+    <p>We regularly update our information to reflect changes in program pricing, offerings, and provider information. Program details can change frequently, so:</p>
+
+    <ul>
+      <li>Always verify current pricing and program details directly with each provider</li>
+      <li>Review program terms of service before enrolling</li>
+      <li>Contact customer support if you have questions about their current offerings</li>
+    </ul>
+
+    <h2>What We Don't Do</h2>
+
+    <ul>
+      <li>We don't accept paid placement or sponsorships from programs</li>
+      <li>We don't guarantee specific program performance or outcomes</li>
+      <li>We don't provide personal medical advice—always consult your healthcare provider</li>
+      <li>We don't recommend programs based solely on commission rates</li>
+      <li>We don't publish fake testimonials or artificial reviews</li>
+    </ul>
+
+    <h2>Affiliate Disclosure</h2>
+
+    <p>We earn affiliate commissions when you enroll in programs through our links. This helps us maintain this free resource for you. However, affiliate relationships do not influence our program evaluations or rankings.</p>
+
+    <p>For more details, see our <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>.</p>
+
+    <h2>If You Notice Inaccuracies</h2>
+
+    <p>If you find outdated information or inaccuracies on our site, please <a href="/contact.html">contact us</a> so we can correct it. We appreciate your feedback and want to maintain the accuracy of our content.</p>
+
+    <h2>Your Feedback Matters</h2>
+
+    <p>Have you used one of these programs? We'd love to hear about your experience (feedback only—we don't verify or publish individual testimonials). Your insights help us improve our reviews and serve other users better.</p>
+
+    <p><a href="/contact.html">Share your feedback →</a></p>
+  </article>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/guides/">All Guides</a></li>
+            <li><a href="/how-we-review.html">Our Methodology</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/terms-of-use.html">Terms of Use</a></li>
+            <li><a href="/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+            <li><a href="/medical-disclaimer.html">Medical Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
