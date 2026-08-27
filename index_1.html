@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GLP-1 Health Connect | Compare Online Weight Loss Programs</title>
+  <meta name="description" content="Compare the top GLP-1 telehealth programs by price, medication options, and support. Independent research to help you find the right online weight loss provider." />
+  <meta property="og:title" content="GLP-1 Health Connect | Compare Online Weight Loss Programs" />
+  <meta property="og:description" content="Independent comparison of top GLP-1 telehealth programs. Find the right provider for your weight loss journey." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://glp1healthconnect.com/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal:      #0ABFA3;
+      --teal-dark: #088a77;
+      --teal-dim:  #0ABFA318;
+      --navy:      #0B1F3A;
+      --navy-mid:  #122947;
+      --ink:       #0F1923;
+      --slate:     #4A5568;
+      --mist:      #F4F7FA;
+      --white:     #FFFFFF;
+      --border:    #E2E8F0;
+      --radius-sm: 8px;
+      --radius:    14px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.05);
+      --shadow:    0 4px 16px rgba(0,0,0,.08), 0 1px 4px rgba(0,0,0,.05);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5%;
+    }
+    .nav-inner {
+      max-width: 1120px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Sora', sans-serif;
+      font-size: 17px; font-weight: 700;
+      color: var(--navy); text-decoration: none;
+    }
+    .logo-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--teal);
+      box-shadow: 0 0 0 3px var(--teal-dim);
+    }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a {
+      font-size: 14px; font-weight: 500;
+      color: var(--slate); text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--navy); }
+    .nav-cta {
+      background: var(--teal);
+      color: var(--white) !important;
+      padding: 9px 20px;
+      border-radius: var(--radius-sm);
+      font-size: 14px; font-weight: 600;
+      text-decoration: none;
+      transition: background .2s;
+    }
+    .nav-cta:hover { background: var(--teal-dark) !important; }
+    .hamburger {
+      display: none; flex-direction: column;
+      gap: 5px; background: none; border: none;
+      cursor: pointer; padding: 4px;
+    }
+    .hamburger span {
+      display: block; width: 22px; height: 2px;
+      background: var(--navy); border-radius: 2px;
+    }
+    .mobile-menu {
+      display: none; flex-direction: column;
+      background: var(--white); border-top: 1px solid var(--border);
+      padding: 16px 5% 20px;
+    }
+    .mobile-menu a {
+      padding: 12px 0; font-size: 15px; font-weight: 500;
+      color: var(--slate); text-decoration: none;
+      border-bottom: 1px solid var(--border);
+    }
+    .mobile-menu a:last-child { border-bottom: none; }
+    .mobile-menu.open { display: flex; }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--navy);
+      padding: 88px 5% 100px;
+      position: relative; overflow: hidden;
+    }
+    .hero-glow-1 {
+      position: absolute; top: -80px; right: -80px;
+      width: 420px; height: 420px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(10,191,163,.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-glow-2 {
+      position: absolute; bottom: -60px; left: 10%;
+      width: 300px; height: 300px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(56,139,253,.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 820px; margin: 0 auto;
+      text-align: center; position: relative; z-index: 1;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: rgba(10,191,163,.14);
+      border: 1px solid rgba(10,191,163,.3);
+      color: #6ee7d8;
+      font-size: 12px; font-weight: 600; letter-spacing: .08em;
+      text-transform: uppercase; padding: 6px 16px;
+      border-radius: 100px; margin-bottom: 28px;
+    }
+    .hero-badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); }
+    .hero h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 700; line-height: 1.15;
+      color: var(--white); margin-bottom: 20px;
+    }
+    .hero h1 em { font-style: normal; color: var(--teal); }
+    .hero-sub {
+      font-size: clamp(15px, 2vw, 18px);
+      color: rgba(255,255,255,.6);
+      max-width: 600px; margin: 0 auto 36px;
+      line-height: 1.65;
+    }
+    .hero-btns {
+      display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--teal); color: var(--white);
+      font-size: 15px; font-weight: 600;
+      padding: 14px 28px; border-radius: var(--radius-sm);
+      text-decoration: none; border: none; cursor: pointer;
+      transition: background .2s, transform .15s;
+    }
+    .btn-primary:hover { background: var(--teal-dark); transform: translateY(-1px); }
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: rgba(255,255,255,.8);
+      font-size: 15px; font-weight: 500;
+      padding: 14px 28px; border-radius: var(--radius-sm);
+      border: 1px solid rgba(255,255,255,.2);
+      text-decoration: none; cursor: pointer;
+      transition: border-color .2s, color .2s;
+    }
+    .btn-outline:hover { border-color: rgba(255,255,255,.5); color: var(--white); }
+    .hero-disclaimer {
+      font-size: 12px; color: rgba(255,255,255,.3);
+      font-style: italic;
+    }
+
+    /* ── TRUST BAR ── */
+    .trust-bar {
+      background: var(--mist);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 5%;
+    }
+    .trust-inner {
+      max-width: 1120px; margin: 0 auto;
+      display: flex; align-items: center;
+      justify-content: center; gap: 32px; flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex; align-items: center; gap: 7px;
+      font-size: 13px; font-weight: 500; color: var(--slate);
+    }
+    .trust-check {
+      width: 18px; height: 18px; border-radius: 50%;
+      background: var(--teal-dim);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .trust-check svg { width: 10px; height: 10px; }
+
+    /* ── SECTIONS ── */
+    section { padding: 72px 5%; }
+    .section-inner { max-width: 1120px; margin: 0 auto; }
+    .eyebrow {
+      font-size: 12px; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--teal);
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 700; color: var(--navy);
+      margin-bottom: 12px; line-height: 1.25;
+    }
+    .section-sub {
+      font-size: 16px; color: var(--slate);
+      max-width: 600px; line-height: 1.7;
+      margin-bottom: 44px;
+    }
+
+    /* ── AFFILIATE DISCLOSURE ── */
+    .affil-bar {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: var(--radius-sm);
+      padding: 10px 16px; margin-bottom: 32px;
+      font-size: 12px; color: #92400e;
+      display: flex; gap: 8px; align-items: flex-start;
+    }
+    .affil-bar svg { flex-shrink: 0; margin-top: 1px; }
+
+    /* ── PROVIDER CARDS ── */
+    .providers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .provider-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      display: flex; flex-direction: column; gap: 16px;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow .2s, border-color .2s, transform .2s;
+      position: relative; overflow: hidden;
+    }
+    .provider-card:hover {
+      box-shadow: var(--shadow);
+      border-color: rgba(10,191,163,.3);
+      transform: translateY(-2px);
+    }
+    .provider-card.top-pick {
+      border-color: var(--teal);
+      border-width: 1.5px;
+    }
+    .top-pick-ribbon {
+      position: absolute; top: 0; right: 0;
+      background: var(--teal);
+      color: var(--white);
+      font-size: 10px; font-weight: 700;
+      letter-spacing: .07em; text-transform: uppercase;
+      padding: 5px 14px 5px 20px;
+      clip-path: polygon(12px 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .pcard-header { display: flex; align-items: center; gap: 14px; }
+    .pcard-logo {
+      width: 48px; height: 48px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Sora', sans-serif;
+      font-size: 15px; font-weight: 700; color: var(--white);
+      flex-shrink: 0;
+    }
+    .pcard-name {
+      font-family: 'Sora', sans-serif;
+      font-size: 17px; font-weight: 700; color: var(--navy);
+    }
+    .pcard-best { font-size: 12px; color: var(--slate); margin-top: 2px; }
+    .pcard-divider { height: 1px; background: var(--border); }
+    .pcard-price-row {
+      display: flex; align-items: baseline; gap: 6px;
+    }
+    .pcard-price {
+      font-family: 'Sora', sans-serif;
+      font-size: 26px; font-weight: 700; color: var(--navy);
+    }
+    .pcard-per { font-size: 13px; color: var(--slate); }
+    .pcard-tags {
+      display: flex; flex-wrap: wrap; gap: 6px;
+    }
+    .tag {
+      font-size: 11px; font-weight: 500; padding: 4px 10px;
+      border-radius: 100px; background: var(--mist);
+      border: 1px solid var(--border); color: var(--slate);
+    }
+    .tag.green {
+      background: rgba(10,191,163,.08);
+      border-color: rgba(10,191,163,.25);
+      color: #087a68;
+    }
+    .pcard-features { display: flex; flex-direction: column; gap: 7px; }
+    .pcard-feat {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 13px; color: var(--slate);
+    }
+    .feat-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--teal); flex-shrink: 0;
+    }
+    .pcard-cta {
+      display: block; text-align: center;
+      padding: 12px; border-radius: var(--radius-sm);
+      font-size: 14px; font-weight: 600;
+      text-decoration: none; transition: .2s;
+      margin-top: auto;
+    }
+    .pcard-cta.solid {
+      background: var(--teal); color: var(--white);
+    }
+    .pcard-cta.solid:hover { background: var(--teal-dark); }
+    .pcard-cta.ghost {
+      border: 1px solid var(--border); color: var(--navy);
+      background: transparent;
+    }
+    .pcard-cta.ghost:hover { border-color: var(--teal); color: var(--teal); }
+    .pcard-affil {
+      font-size: 10px; color: #aaa; text-align: center; margin-top: -8px;
+    }
+
+    /* ── HOW IT WORKS ── */
+    .hiw-section { background: var(--mist); }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+    }
+    .step-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      box-shadow: var(--shadow-sm);
+    }
+    .step-num {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--teal-dim);
+      color: var(--teal-dark);
+      font-family: 'Sora', sans-serif;
+      font-size: 15px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 14px;
+    }
+    .step-title {
+      font-size: 14px; font-weight: 600; color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .step-desc { font-size: 13px; color: var(--slate); line-height: 1.5; }
+
+    /* ── COMPARISON TABLE ── */
+    .compare-wrap { overflow-x: auto; border-radius: var(--radius); border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    thead { background: var(--navy); }
+    thead th {
+      padding: 14px 16px; text-align: left;
+      font-size: 12px; font-weight: 600;
+      color: rgba(255,255,255,.65); letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+    thead th:first-child { color: var(--white); }
+    tbody tr { border-bottom: 1px solid var(--border); }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:nth-child(even) { background: var(--mist); }
+    tbody tr:hover { background: rgba(10,191,163,.04); }
+    tbody td { padding: 14px 16px; color: var(--slate); }
+    tbody td:first-child { font-weight: 600; color: var(--navy); }
+    .check { color: var(--teal); font-weight: 700; }
+    .dash { color: #ccc; }
+
+    /* ── FAQ ── */
+    .faq-list { display: flex; flex-direction: column; gap: 10px; max-width: 760px; }
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow: hidden; background: var(--white);
+    }
+    .faq-q {
+      width: 100%; text-align: left;
+      padding: 16px 20px;
+      background: transparent; border: none; cursor: pointer;
+      font-size: 15px; font-weight: 500; color: var(--navy);
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 12px; line-height: 1.4;
+    }
+    .faq-icon {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--mist); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; font-size: 16px; color: var(--slate);
+      transition: transform .25s, background .2s;
+    }
+    .faq-a {
+      padding: 0 20px; max-height: 0;
+      overflow: hidden; transition: max-height .35s ease, padding .35s ease;
+      font-size: 14px; color: var(--slate); line-height: 1.65;
+    }
+    .faq-item.open .faq-a { max-height: 300px; padding: 0 20px 18px; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); background: var(--teal-dim); }
+
+    /* ── FINAL CTA ── */
+    .cta-section {
+      background: var(--navy);
+      text-align: center; padding: 80px 5%;
+    }
+    .cta-section h2 {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(24px, 3.5vw, 38px);
+      font-weight: 700; color: var(--white); margin-bottom: 14px;
+    }
+    .cta-section p { font-size: 16px; color: rgba(255,255,255,.55); margin-bottom: 32px; }
+
+    /* ── DISCLAIMER ── */
+    .disclaimer-section {
+      background: var(--mist);
+      border-top: 1px solid var(--border);
+      padding: 32px 5%;
+    }
+    .disclaimer-inner {
+      max-width: 900px; margin: 0 auto;
+      font-size: 12px; color: #777; line-height: 1.7;
+    }
+    .disclaimer-inner strong { color: var(--slate); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink); padding: 32px 5%;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: 'Sora', sans-serif;
+      font-size: 16px; font-weight: 700; color: var(--white);
+      margin-bottom: 10px;
+      display: flex; align-items: center; gap: 8px; justify-content: center;
+    }
+    .footer-links {
+      display: flex; gap: 24px; justify-content: center;
+      flex-wrap: wrap; margin-bottom: 14px;
+    }
+    .footer-links a { font-size: 12px; color: rgba(255,255,255,.4); text-decoration: none; }
+    .footer-links a:hover { color: rgba(255,255,255,.7); }
+    .footer-copy { font-size: 11px; color: rgba(255,255,255,.25); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-cta.desktop { display: none; }
+      .hamburger { display: flex; }
+      section { padding: 52px 5%; }
+      .hero { padding: 64px 5% 72px; }
+      .trust-inner { gap: 16px; }
+    }
+    @media (max-width: 520px) {
+      .providers-grid { grid-template-columns: 1fr; }
+      .steps-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">
+      <div class="logo-dot"></div>
+      GLP-1 Health Connect
+    </a>
+    <div class="nav-links">
+      <a href="#providers">Compare Providers</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a href="#providers" class="nav-cta desktop">Compare Programs →</a>
+    <button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#providers" onclick="toggleMenu()">Compare Providers</a>
+    <a href="#how-it-works" onclick="toggleMenu()">How It Works</a>
+    <a href="#faq" onclick="toggleMenu()">FAQ</a>
+    <a href="#providers" onclick="toggleMenu()" style="color: var(--teal); font-weight: 600;">Compare Programs →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <div class="hero-badge-dot"></div>
+      Independent · Educational · Not a Medical Provider
+    </div>
+    <h1>Compare Online <em>GLP-1</em><br>Weight Loss Programs</h1>
+    <p class="hero-sub">
+      Research telehealth providers, pricing, medication options, and support programs — all in one place. We help you make informed decisions.
+    </p>
+    <div class="hero-btns">
+      <a href="#providers" class="btn-primary">Compare Providers →</a>
+      <a href="#how-it-works" class="btn-outline">How It Works</a>
+    </div>
+    <p class="hero-disclaimer">GLP-1 Health Connect is an independent informational website. We do not provide medical advice or prescribe medication.</p>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <div class="trust-check">
+        <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 5L4 7L8 3" stroke="#0ABFA3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      Independent research
+    </div>
+    <div class="trust-item">
+      <div class="trust-check">
+        <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#0ABFA3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      Affiliate disclosure on all links
+    </div>
+    <div class="trust-item">
+      <div class="trust-check">
+        <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#0ABFA3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      No hidden upsells
+    </div>
+    <div class="trust-item">
+      <div class="trust-check">
+        <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4 7L8 3" stroke="#0ABFA3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      Medically responsible content
+    </div>
+  </div>
+</div>
+
+<!-- PROVIDERS -->
+<section id="providers">
+  <div class="section-inner">
+    <div class="eyebrow">Top-Rated Programs</div>
+    <h2 class="section-title">Compare GLP-1 Telehealth Providers</h2>
+    <p class="section-sub">We research and compare programs so you can make a confident decision. Programs are ranked by overall value, not commission size.</p>
+
+    <div class="affil-bar">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="7" cy="7" r="6.5" stroke="#92400e"/>
+        <path d="M7 6v4M7 4.5v.5" stroke="#92400e" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+      <span><strong>Affiliate disclosure:</strong> GLP-1 Health Connect may earn a commission when you enroll through links on this page. This does not increase your cost. Pricing shown is estimated — verify current pricing directly with each provider before enrolling.</span>
+    </div>
+
+    <div class="providers-grid">
+
+      <!-- SkinnyRx -->
+      <div class="provider-card top-pick">
+        <div class="top-pick-ribbon">Top Pick</div>
+        <div class="pcard-header">
+          <div class="pcard-logo" style="background:#0a8a73;">SK</div>
+          <div>
+            <div class="pcard-name">SkinnyRx</div>
+            <div class="pcard-best">Best for: Multiple GLP-1 options (tablets & injections)</div>
+          </div>
+        </div>
+        <div class="pcard-divider"></div>
+        <div class="pcard-price-row">
+          <div class="pcard-price">$199</div>
+          <div class="pcard-per">/month</div>
+        </div>
+        <div class="pcard-tags">
+          <span class="tag green">Semaglutide</span>
+          <span class="tag green">Tirzepatide</span>
+          <span class="tag green">Tablets & Injections</span>
+          <span class="tag green">Compounded & Brand</span>
+        </div>
+        <div class="pcard-features">
+          <div class="pcard-feat"><div class="feat-dot"></div>Injectable Semaglutide from $199/mo</div>
+          <div class="pcard-feat"><div class="feat-dot"></div>Semaglutide tablets from $249/mo</div>
+          <div class="pcard-feat"><div class="feat-dot"></div>Tirzepatide options starting at $299/mo</div>
+          <div class="pcard-feat"><div class="feat-dot"></div>Licensed U.S. providers & FDA-compliant pharmacies</div>
+          <div class="pcard-feat"><div class="feat-dot"></div>No insurance required</div>
+        </div>
+        <a href="#" class="pcard-cta solid">Get Started →</a>
+        <p class="pcard-affil">Affiliate link — we may earn a commission</p>
+      </div>
+
+      <!-- TrimRx -->
+      <div class="provider-card">
+        <div class="pcard-header">
+          <div class="pcard-logo" style="background:#185FA5;">TR</div>
+          <div>
+            <div class="pcard-name">TrimRx</div>
+            <div class="pcard-best">Best for: Affordable weekly injections</div>
+          </div>
+        </div>
+        <div class="pcard-divider"></div>
+        <div class="pcard-price-row">
+          <div class="pcard-price">$149</div>
+          <div class="pcard-per">/month</div>
+        </div>
+        <div class="pcard-tags">
+          <span class="tag green">GLP-1 Injections</span>
+          <span class="tag green">GLP-1 + GIP Options</span>
+          <span class="tag">Weekly injection</span>
+          <span class="tag">In stock</span>
+        </div>
+        <div class="pcard-features">
+          <div class="pcard-feat"><div class="feat-dot"></div>GLP-1 injections starting at $149/mo</div>
+          <div class="pcard-feat"><div class="feat-dot"></div>GLP-1 + GIP injections from $249/mo</div>
+          <div class="pcard-feat"><div class="feat-dot"></div>One simple injection per week</div>
+          <div class="pcard-feat"><div class="feat-dot"></div>Simple online enrollment process</div>
+        </div>
+        <a href="#" class="pcard-cta ghost">Get Started →</a>
+        <p class="pcard-affil">Affiliate link — we may earn a commission</p>
+      </div>
+
+      <!-- Eden -->
+      <div class="provider-card">
+        <div class="pcard-header">
+          <div class="pcard-logo" style="background:#534AB7;">ED</div>
+          <div>
+            <div class="pcard-name">Eden</div>
+            <div class="pcard-best">Best for: Transparent, simple pricing</div>
+          </div>
+        </div>
+        <div class="pcard-divider"></div>
+        <div class="pcard-price-row">
+          <div class="pcard-price">$99</div>
+          <div class="pcard-per">/month</div>
+        </div>
+        <div class="pcard-tags">
+          <span class="tag green">Semaglutide</span>
+          <span class="tag green">Tirzepatide</span>
+          <span class="tag">No insurance needed</span>
+          <span class="tag">Free assessment</span>
+        </div>
+        <div class="pcard-features">
+          <div class="pcard-feat"><div class="feat-dot"></div>Semaglutide at $99/month</div>
+          <div class="pcard-feat"><div class="feat-dot"></div>Tirzepatide at $129/month</div>
+          <div class="pcard-feat"><div class="feat-dot"></div>Free 3-minute assessment</div>
+          <div class="pcard-feat"><div class="feat-dot"></div>Licensed provider consultation</div>
+          <div class="pcard-feat"><div class="feat-dot"></div>No insurance required</div>
+        </div>
+        <a href="#" class="pcard-cta ghost">Start Assessment →</a>
+        <p class="pcard-affil">Affiliate link — we may earn a commission</p>
+      </div>
+
+      <!-- Fridays Health -->
+      <div class="provider-card">
+        <div class="pcard-header">
+          <div class="pcard-logo" style="background:#E74C3C;">FH</div>
+          <div>
+            <div class="pcard-name">Fridays Health</div>
+            <div class="pcard-best">Best for: Competitive pricing and expert clinical care</div>
+          </div>
+        </div>
+        <div class="pcard-divider"></div>
+        <div class="pcard-price-row">
+          <div class="pcard-price">$117</div>
+          <div class="pcard-per">/month</div>
+        </div>
+        <div class="pcard-tags">
+          <span class="tag green">Semaglutide</span>
+          <span class="tag green">Tirzepatide</span>
+          <span class="tag green">Brand-name & Compounded</span>
+          <span class="tag green">No Insurance Required</span>
+        </div>
+        <div class="pcard-features">
+          <div class="pcard-feat"><div class="feat-dot"></div>Semaglutide as low as $117/mo (lowest price)</div>
+          <div class="pcard-feat"><div class="feat-dot"></div>Tirzepatide as low as $198/mo</div>
+          <div class="pcard-feat"><div class="feat-dot"></div>Expert clinical care included</div>
+          <div class="pcard-feat"><div class="feat-dot"></div>Flexible payment plans available</div>
+          <div class="pcard-feat"><div class="feat-dot"></div>Save up to $2,288 vs. retail</div>
+        </div>
+        <a href="#" class="pcard-cta solid">Get Started →</a>
+        <p class="pcard-affil">Affiliate link — we may earn a commission</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section style="background: var(--mist); padding: 60px 5%;">
+  <div class="section-inner">
+    <div class="eyebrow">Side by Side</div>
+    <h2 class="section-title">Quick Comparison</h2>
+    <p class="section-sub">Key features at a glance. Verify all details directly with each provider before enrolling.</p>
+
+    <div class="compare-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Provider</th>
+            <th>Starting Price</th>
+            <th>Semaglutide</th>
+            <th>Tirzepatide</th>
+            <th>No Insurance</th>
+            <th>Home Delivery</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SkinnyRx</td>
+            <td>$199 /mo</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+          </tr>
+          <tr>
+            <td>TrimRx</td>
+            <td>$149 /mo</td>
+            <td class="check">✓</td>
+            <td class="dash">—</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+          </tr>
+          <tr>
+            <td>Eden</td>
+            <td>$99 /mo</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+          </tr>
+          <tr>
+            <td>Fridays Health</td>
+            <td>$117 /mo</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:11px; color:#aaa; margin-top:10px; font-style:italic;">* Data shown is placeholder. Update with verified pricing and features once you are approved for each program.</p>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="hiw-section" id="how-it-works">
+  <div class="section-inner">
+    <div class="eyebrow">The Process</div>
+    <h2 class="section-title">How GLP-1 Telehealth Works</h2>
+    <p class="section-sub">GLP-1 Health Connect does not prescribe medication. We explain the general telehealth process so you know what to expect from providers.</p>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <div class="step-title">Research and compare</div>
+        <div class="step-desc">Use this site to compare providers by price, medication options, and support before committing to any program.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <div class="step-title">Complete the questionnaire</div>
+        <div class="step-desc">Each provider collects your health history through an online intake form, typically covering weight, health history, and goals.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <div class="step-title">Provider review</div>
+        <div class="step-desc">A licensed healthcare professional reviews your profile and determines whether treatment may be appropriate for you individually.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <div class="step-title">Prescription and delivery</div>
+        <div class="step-desc">If prescribed, medication is fulfilled through the provider's pharmacy process and delivered directly to your door.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">5</div>
+        <div class="step-title">Ongoing support</div>
+        <div class="step-desc">Quality programs provide follow-up consultations, dose guidance, and ongoing patient support throughout treatment.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-inner">
+    <div class="eyebrow">Common Questions</div>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-sub">Real questions people ask before choosing a GLP-1 telehealth program.</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Does the monthly price include everything?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-a">Not always. Some programs list the medication cost separately from consultation fees, membership fees, lab costs, and shipping. Always confirm exactly what is included before enrolling with any provider.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What is the difference between branded and compounded GLP-1 medications?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-a">Brand-name medications like Wegovy and Zepbound are FDA-approved for weight management. Compounded versions contain the same active ingredients but are not FDA-approved drug products. Consult a licensed healthcare professional for guidance on what may be appropriate for your situation.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do I need insurance to use an online GLP-1 provider?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-a">Many programs offer cash-pay options that do not require insurance. However, programs vary — some will check your insurance for brand-name medication coverage. Check directly with the provider before enrolling.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Does everyone who applies get prescribed GLP-1 medication?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-a">No. A licensed healthcare professional reviews your health information and determines whether treatment is medically appropriate for you. Approval and prescribing decisions are made by the provider, not by GLP-1 Health Connect.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What is GLP-1 Health Connect, and how are you different from the providers?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-a">GLP-1 Health Connect is an independent educational and comparison website. We do not provide medical advice, prescribe medication, collect health information, or determine eligibility. We help you research and compare programs, then refer you to licensed providers through affiliate partnerships.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How does GLP-1 Health Connect make money?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-a">We may earn an affiliate commission when you enroll in a program through links on this website. This does not increase your cost in any way. We disclose affiliate relationships clearly on all provider links.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Ready to find the right program?</h2>
+  <p>Compare pricing, medication options, and what is included across the top GLP-1 telehealth providers.</p>
+  <a href="#providers" class="btn-primary" style="font-size:16px; padding:16px 36px;">Compare All Providers →</a>
+</section>
+
+<!-- DISCLAIMER -->
+<div class="disclaimer-section">
+  <div class="disclaimer-inner">
+    <strong>Medical disclaimer:</strong> Content published on GLP-1 Health Connect is intended for general informational and educational purposes only. It is not intended to be, and should not be interpreted as, medical advice. GLP-1 Health Connect is not a licensed healthcare provider and does not prescribe medication. Always consult a qualified and licensed healthcare professional regarding your individual health needs, medical history, and treatment options before making any health decisions. Individual results vary. Not all patients are candidates for GLP-1 medications.
+    <br><br>
+    <strong>Affiliate disclosure:</strong> GLP-1 Health Connect participates in affiliate marketing programs. We may earn a commission when you purchase or enroll in a product or service through links on this website. This compensation does not influence our editorial content or the order in which providers are listed. Affiliate commissions do not increase the cost to you as the consumer. All affiliate relationships are disclosed clearly at the point of the link.
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <div class="logo-dot"></div>
+    GLP-1 Health Connect
+  </div>
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Use</a>
+    <a href="#">Affiliate Disclosure</a>
+    <a href="#">Medical Disclaimer</a>
+    <a href="#">Contact</a>
+  </div>
+  <p class="footer-copy">© 2026 GLP-1 Health Connect · Cherry and Cherry LLC · Independent educational website. Not a medical provider.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+</body>
+</html>
