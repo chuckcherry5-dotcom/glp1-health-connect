@@ -358,6 +358,15 @@
       #providers { padding-block: 64px; }
     }
 
+    /* ── INTRO INFO ── */
+    .intro-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; max-width: 940px; margin: 8px auto 20px; }
+    .intro-item { background: var(--mist); border: 1px solid var(--border); border-radius: 16px; padding: 22px 24px; }
+    .intro-title { font-family: 'Sora', sans-serif; font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+    .intro-item p { font-size: 14px; line-height: 1.6; color: var(--slate); }
+    .intro-note { max-width: 940px; margin: 0 auto 44px; font-size: 14px; line-height: 1.6; color: var(--slate); }
+    .intro-note strong { color: var(--navy); }
+    @media (max-width: 760px) { .intro-grid { grid-template-columns: 1fr; } }
+
     /* ── HOW IT WORKS ── */
     .hiw-section { background: var(--mist); }
     .steps-grid {
@@ -548,7 +557,23 @@
   <div class="section-inner">
     <div class="eyebrow">Our Picks</div>
     <h2 class="section-title">Compare GLP-1 Telehealth Providers</h2>
-    <p class="section-sub">We research and compare programs so you can make a confident decision. See <a href="/methodology.html" style="color:var(--teal-dark);font-weight:600;">how we choose</a>.</p>
+    <p class="section-sub">We research and compare programs so you can make a confident decision. Here is what we look at and what to know before you click. See <a href="/methodology.html" style="color:var(--teal-dark);font-weight:600;">how we choose</a>.</p>
+
+    <div class="intro-grid">
+      <div class="intro-item">
+        <div class="intro-title">Pricing</div>
+        <p>Monthly prices vary by medication, dose and plan length. We show the starting price so you can compare like for like, then confirm the details with the provider.</p>
+      </div>
+      <div class="intro-item">
+        <div class="intro-title">Medication options</div>
+        <p>Programs differ on semaglutide, tirzepatide or both, injections or tablets, and compounded or brand-name versions.</p>
+      </div>
+      <div class="intro-item">
+        <div class="intro-title">Care and support</div>
+        <p>We look at provider consultations, follow-ups, dosing guidance and extras such as nutrition support.</p>
+      </div>
+    </div>
+    <p class="intro-note"><strong>Good to know:</strong> a licensed provider decides whether a GLP-1 medication is right for you. Brand-name versions like Wegovy and Zepbound are FDA-approved; compounded versions are not.</p>
 
     <div class="providers-grid">
 
