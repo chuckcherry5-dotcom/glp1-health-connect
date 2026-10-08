@@ -1,6 +1,34 @@
 {
   "rewrites": [
-    { "source": "/how-we-review.html", "destination": "/methodology.html" },
-    { "source": "/how-we-review", "destination": "/methodology.html" }
+    {
+      "source": "/how-we-review.html",
+      "destination": "/methodology.html"
+    },
+    {
+      "source": "/how-we-review",
+      "destination": "/methodology.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/guides/glp1-program-cost.html",
+      "destination": "/guides/program-cost.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/what-glp1-telehealth-programs-include.html",
+      "destination": "/guides/what-included.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/questions-before-choosing-glp1-provider.html",
+      "destination": "/guides/questions.html",
+      "permanent": true
+    },
+    {
+      "source": "/guides/how-online-glp1-telehealth-works.html",
+      "destination": "/guides/how-telehealth-works.html",
+      "permanent": true
+    }
   ]
 }

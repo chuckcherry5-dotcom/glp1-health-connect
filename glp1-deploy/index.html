@@ -4,10 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GLP-1 Health Connect | Compare Online Weight Loss Programs</title>
-  <meta name="description" content="Compare GLP-1 telehealth programs by price, medication options, and support. Independent research to help you find the right online weight loss provider." />
+  <meta name="description" content="Compare GLP-1 telehealth programs by price, medication options, and support. See advertised offers, renewal questions, and care options before visiting a provider." />
   <meta property="og:title" content="GLP-1 Health Connect | Compare Online Weight Loss Programs" />
-  <meta property="og:description" content="Independent comparison of top GLP-1 telehealth programs. Find the right provider for your weight loss journey." />
+  <meta property="og:description" content="Compare two affiliate GLP-1 programs, understand offer terms, and prepare questions for a licensed clinician." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://glp1-health-connect.vercel.app/" />
+  <meta property="og:image" content="https://glp1-health-connect.vercel.app/social-preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="GLP-1 Health Connect: compare programs, understand costs, ask better questions." />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="canonical" href="https://glp1-health-connect.vercel.app/" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%230ABFA3'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -503,8 +509,10 @@
       .steps-grid { grid-template-columns: 1fr; }
     }
   </style>
+  <link rel="stylesheet" href="/improvements.css" />
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <!-- NAV -->
 <nav>
@@ -519,7 +527,7 @@
       <a href="#faq">FAQ</a>
     </div>
     <a href="#providers" class="nav-cta desktop">Compare Programs →</a>
-    <button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu" onclick="toggleMenu()">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -531,6 +539,7 @@
   </div>
 </nav>
 
+<main id="main">
 <!-- HERO -->
 <section class="hero">
   <div class="hero-glow-1"></div>
@@ -538,114 +547,60 @@
   <div class="hero-inner">
     <div class="hero-badge">
       <div class="hero-badge-dot"></div>
-      Independent · Educational · Not a Medical Provider
+      Compare programs · Understand costs
     </div>
     <h1>Compare Online <em>GLP-1</em><br>Weight Loss Programs</h1>
     <p class="hero-sub">
-      Research telehealth providers, pricing, medication options, and support programs — all in one place. We help you make informed decisions.
+      Explore two telehealth programs, understand introductory offers, and know what to ask before signing up.
     </p>
     <div class="hero-btns">
       <a href="#providers" class="btn-primary">Compare Providers →</a>
       <a href="#how-it-works" class="btn-outline">How It Works</a>
     </div>
-    <p class="hero-disclaimer">GLP-1 Health Connect is an independent informational website. We do not provide medical advice or prescribe medication.</p>
+    <p class="hero-disclaimer">An affiliate comparison website, not a medical provider. We may earn a commission when you enroll through our links.</p>
   </div>
 </section>
 
 <!-- PROVIDERS -->
 <section id="providers">
   <div class="section-inner">
-    <div class="eyebrow">Our Picks</div>
+    <div class="eyebrow">Two programs to explore</div>
     <h2 class="section-title">Compare GLP-1 Telehealth Providers</h2>
-    <p class="section-sub">We research and compare programs so you can make a confident decision. Here is what we look at and what to know before you click. See <a href="/methodology.html" style="color:var(--teal-dark);font-weight:600;">how we choose</a>.</p>
+    <p class="section-sub">Compare publicly advertised offers below. This is a selection of affiliate partners, not a ranking of every provider. <a href="/methodology.html">How this comparison is prepared</a>.</p>
 
-    <div class="intro-grid">
-      <div class="intro-item">
-        <div class="intro-title">Pricing</div>
-        <p>Monthly prices vary by medication, dose and plan length. We show the starting price so you can compare like for like, then confirm the details with the provider.</p>
-      </div>
-      <div class="intro-item">
-        <div class="intro-title">Medication options</div>
-        <p>Programs differ on semaglutide, tirzepatide or both, injections or tablets, and compounded or brand-name versions.</p>
-      </div>
-      <div class="intro-item">
-        <div class="intro-title">Care and support</div>
-        <p>We look at provider consultations, follow-ups, dosing guidance and extras such as nutrition support.</p>
-      </div>
-    </div>
-    <p class="intro-note"><strong>Good to know:</strong> a licensed provider decides whether a GLP-1 medication is right for you. Brand-name versions like Wegovy and Zepbound are FDA-approved; compounded versions are not.</p>
-
+    <p class="affil-bar"><strong>Advertising disclosure:</strong> We earn a commission if you enroll through these links, at no extra cost to you.</p>
+    <p class="intro-note"><strong>Prescription required.</strong> A licensed clinician decides whether treatment is appropriate. Compounded medications are not FDA-approved. <a href="#medication-safety">Read the medication safety note</a>.</p>
     <div class="providers-grid">
 
-      <!-- SkinnyRx -->
-      <div class="provider-card top-pick">
-        <div class="top-pick-ribbon">Top Pick</div>
-        <div class="pcard-header">
-          <div class="pcard-logo" style="background:#0a8a73;">SK</div>
-          <div>
-            <div class="pcard-name">SkinnyRx</div>
-            <div class="pcard-best">Best for: Multiple GLP-1 options (tablets & injections)</div>
-          </div>
-        </div>
+      <article class="provider-card">
+        <div class="pcard-header"><div class="pcard-logo" style="background:#087a68" aria-hidden="true">SK</div><div><h3 class="pcard-name">SkinnyRx</h3><p class="pcard-best">Tablets and injection options</p></div></div>
         <div class="pcard-divider"></div>
-        <div class="pcard-price-row">
-          <div class="pcard-per">from</div>
-          <div class="pcard-price">$99</div>
-          <div class="pcard-per">/month</div>
-        </div>
-        <div class="pcard-tags">
-          <span class="tag green">Semaglutide</span>
-          <span class="tag green">Tirzepatide</span>
-          <span class="tag green">Tablets & Injections</span>
-          <span class="tag green">Compounded & Brand</span>
-        </div>
-        <div class="pcard-features">
-          <div class="pcard-feat"><div class="feat-dot"></div>Injectable Semaglutide from $199/mo</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>Semaglutide tablets from $249/mo</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>Tirzepatide options starting at $299/mo</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>Licensed U.S. providers and pharmacies</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>No insurance required</div>
-        </div>
-        <a href="https://track.revoffers.com/aff_c?offer_id=1464&aff_id=13523" class="pcard-cta solid">Get Started →</a>
-        <p class="pcard-affil">Ad: we earn a commission if you sign up, at no cost to you</p>
-      </div>
-
-      <!-- HumeCare+ -->
-      <div class="provider-card">
-        <div class="pcard-header">
-          <div class="pcard-logo" style="background:#10B981;">HC</div>
-          <div>
-            <div class="pcard-name">HumeCare+</div>
-            <div class="pcard-best">Best for: Personalized telemedicine with comprehensive support</div>
-          </div>
-        </div>
+        <p class="offer-label">Advertised introductory offer</p>
+        <p class="pcard-price-row"><span class="pcard-price">$99</span><span class="pcard-per">first month</span></p>
+        <p class="price-detail">For compounded semaglutide or tirzepatide injections. <strong>This is not a confirmed ongoing monthly price.</strong></p>
+        <ul class="offer-facts"><li>Compounded semaglutide tablets advertised at $149 for the first month.</li><li>Compounded tirzepatide tablets advertised at $199 for the first month.</li><li>Online clinician review; prescription approval is not guaranteed.</li></ul>
+        <div class="verify-box"><strong>Before paying</strong><p>Confirm the renewal price, plan length, total due today, medication, and cancellation deadline.</p></div>
+        <p class="source-note">Offer checked Oct. 8, 2026 · <a href="https://skinnyrx.com/">Provider source</a>. Offers and availability may change.</p>
+        <a href="https://track.revoffers.com/aff_c?offer_id=1464&amp;aff_id=13523" class="pcard-cta solid" rel="sponsored nofollow">View SkinnyRx offer →</a>
+        <p class="pcard-affil">Paid referral link. You will leave this website.</p>
+      </article>
+      <article class="provider-card">
+        <div class="pcard-header"><div class="pcard-logo" style="background:#087a68" aria-hidden="true">HC</div><div><h3 class="pcard-name">HumeCare+</h3><p class="pcard-best">Care with app and tracking tools</p></div></div>
         <div class="pcard-divider"></div>
-        <div class="pcard-price-row">
-          <div class="pcard-per">from</div>
-          <div class="pcard-price">$199</div>
-          <div class="pcard-per">/month</div>
-        </div>
-        <div class="pcard-tags">
-          <span class="tag green">GLP-1 & GIP Combos</span>
-          <span class="tag green">Personalized Care</span>
-          <span class="tag green">Full Health Dashboard</span>
-          <span class="tag green">Ongoing Support</span>
-        </div>
-        <div class="pcard-features">
-          <div class="pcard-feat"><div class="feat-dot"></div>Personalized GLP-1 medications starting at $199/mo</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>Board-certified physician consultations</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>Comprehensive health dashboard and tracking</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>Nutritionist and lifestyle support included</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>Regular follow-ups and dosage optimization</div>
-        </div>
-        <a href="https://track.revoffers.com/aff_c?offer_id=1588&aff_id=13523" class="pcard-cta solid">Get Started →</a>
-        <p class="pcard-affil">Ad: we earn a commission if you sign up, at no cost to you</p>
-      </div>
-
+        <p class="offer-label">Advertised starting price</p>
+        <p class="pcard-price-row"><span class="pcard-price">$199</span><span class="pcard-per">/ month</span></p>
+        <p class="price-detail">Shown with a <strong>3-month plan</strong> on the provider’s website. Confirm the billing schedule and total commitment.</p>
+        <ul class="offer-facts"><li>Provider advertises consultation, clinician support, app access, and shipping with the offer.</li><li>Clinical care is delivered by an independent clinical network.</li><li>Membership renews automatically unless canceled under the provider’s terms.</li></ul>
+        <div class="verify-box"><strong>Before paying</strong><p>Confirm the prescribed product, all fees, availability in your state, and cancellation and refund terms.</p></div>
+        <p class="source-note">Offer checked Oct. 8, 2026 · <a href="https://humecare.com/">Provider source</a> · <a href="https://app.humecare.com/terms-conditions">Terms</a>. Details may change.</p>
+        <a href="https://track.revoffers.com/aff_c?offer_id=1588&amp;aff_id=13523" class="pcard-cta solid" rel="sponsored nofollow">View HumeCare+ offer →</a>
+        <p class="pcard-affil">Paid referral link. You will leave this website.</p>
+      </article>
     </div>
   </div>
 </section>
 
+<section id="medication-safety" class="hiw-section"><div class="section-inner safety-inner"><h2 class="section-title">Understand the medication before you choose</h2><p>Compounded GLP-1 medications are not FDA-approved. The FDA does not review them for safety, effectiveness, or quality before marketing. Do not assume a compounded product is equivalent to an FDA-approved medication.</p><p>Ask a licensed clinician about the exact product, potential benefits, side effects, contraindications, and whether an FDA-approved option can meet your medical needs. A low advertised price does not establish that a treatment is appropriate for you.</p><p><a href="https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss">Read the FDA’s guidance on unapproved GLP-1 drugs →</a></p></div></section>
 <!-- HOW IT WORKS -->
 <section class="hiw-section" id="how-it-works">
   <div class="section-inner">
@@ -692,46 +647,40 @@
 
     <div class="faq-list">
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
+        <button class="faq-q" id="faq-q-1" aria-expanded="false" aria-controls="faq-a-1" onclick="toggleFaq(this)">
           Does the monthly price include everything?
-          <div class="faq-icon">+</div>
-        </button>
-        <div class="faq-a">Not always. Some programs list the medication cost separately from consultation fees, membership fees, lab costs, and shipping. Always confirm exactly what is included before enrolling with any provider.</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button><div class="faq-a" id="faq-a-1" role="region" aria-labelledby="faq-q-1" hidden>Not always. Some programs list the medication cost separately from consultation fees, membership fees, lab costs, and shipping. Always confirm exactly what is included before enrolling with any provider.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
+        <button class="faq-q" id="faq-q-2" aria-expanded="false" aria-controls="faq-a-2" onclick="toggleFaq(this)">
           What is the difference between branded and compounded GLP-1 medications?
-          <div class="faq-icon">+</div>
-        </button>
-        <div class="faq-a">Brand-name medications like Wegovy and Zepbound are FDA-approved for weight management. Compounded versions contain the same active ingredients but are not FDA-approved drug products. Consult a licensed healthcare professional for guidance on what may be appropriate for your situation.</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button><div class="faq-a" id="faq-a-2" role="region" aria-labelledby="faq-q-2" hidden>FDA-approved medicines have been reviewed for their approved uses. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality before marketing. They should not be assumed equivalent to approved products. Discuss the exact product and your medical needs with a licensed clinician.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
+        <button class="faq-q" id="faq-q-3" aria-expanded="false" aria-controls="faq-a-3" onclick="toggleFaq(this)">
           Do I need insurance to use an online GLP-1 provider?
-          <div class="faq-icon">+</div>
-        </button>
-        <div class="faq-a">Many programs offer cash-pay options that do not require insurance. However, programs vary — some will check your insurance for brand-name medication coverage. Check directly with the provider before enrolling.</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button><div class="faq-a" id="faq-a-3" role="region" aria-labelledby="faq-q-3" hidden>Many programs offer cash-pay options that do not require insurance. However, programs vary — some will check your insurance for brand-name medication coverage. Check directly with the provider before enrolling.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
+        <button class="faq-q" id="faq-q-4" aria-expanded="false" aria-controls="faq-a-4" onclick="toggleFaq(this)">
           Does everyone who applies get prescribed GLP-1 medication?
-          <div class="faq-icon">+</div>
-        </button>
-        <div class="faq-a">No. A licensed healthcare professional reviews your health information and determines whether treatment is medically appropriate for you. Approval and prescribing decisions are made by the provider, not by GLP-1 Health Connect.</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button><div class="faq-a" id="faq-a-4" role="region" aria-labelledby="faq-q-4" hidden>No. A licensed healthcare professional reviews your health information and determines whether treatment is medically appropriate for you. Approval and prescribing decisions are made by the provider, not by GLP-1 Health Connect.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
+        <button class="faq-q" id="faq-q-5" aria-expanded="false" aria-controls="faq-a-5" onclick="toggleFaq(this)">
           What is GLP-1 Health Connect, and how are you different from the providers?
-          <div class="faq-icon">+</div>
-        </button>
-        <div class="faq-a">GLP-1 Health Connect is an independent educational and comparison website. We do not provide medical advice, prescribe medication, collect health information, or determine eligibility. We help you research and compare programs, then refer you to licensed providers through affiliate partnerships.</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button><div class="faq-a" id="faq-a-5" role="region" aria-labelledby="faq-q-5" hidden>GLP-1 Health Connect is an independent educational and comparison website. We do not provide medical advice, prescribe medication, collect health information, or determine eligibility. We help you research and compare programs, then refer you to licensed providers through affiliate partnerships.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
+        <button class="faq-q" id="faq-q-6" aria-expanded="false" aria-controls="faq-a-6" onclick="toggleFaq(this)">
           How does GLP-1 Health Connect make money?
-          <div class="faq-icon">+</div>
-        </button>
-        <div class="faq-a">We may earn an affiliate commission when you enroll in a program through links on this website. This does not increase your cost in any way. We disclose affiliate relationships clearly on all provider links.</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button><div class="faq-a" id="faq-a-6" role="region" aria-labelledby="faq-q-6" hidden>We may earn an affiliate commission when you enroll in a program through links on this website. This does not increase your cost in any way. We disclose affiliate relationships clearly on all provider links.</div>
       </div>
     </div>
   </div>
@@ -740,8 +689,8 @@
 <!-- CTA -->
 <section class="cta-section">
   <h2>Ready to find the right program?</h2>
-  <p>Compare pricing, medication options, and what is included across the top GLP-1 telehealth providers.</p>
-  <a href="#providers" class="btn-primary" style="font-size:16px; padding:16px 36px;">Compare All Providers →</a>
+  <p>Review the offers, check the terms, and discuss treatment with a licensed clinician.</p>
+  <a href="#providers" class="btn-primary" style="font-size:16px; padding:16px 36px;">Compare the Two Programs →</a>
 </section>
 
 <!-- DISCLAIMER -->
@@ -753,6 +702,7 @@
   </div>
 </div>
 
+</main>
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">
@@ -760,24 +710,40 @@
     GLP-1 Health Connect
   </div>
   <div class="footer-links">
+    <a href="/about.html">About Us</a>
+    <a href="/methodology.html">How We Compare</a>
     <a href="/privacy-policy.html">Privacy Policy</a>
     <a href="/terms-of-use.html">Terms of Use</a>
     <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
     <a href="/medical-disclaimer.html">Medical Disclaimer</a>
-    <a href="/contact.html">Contact</a>
+    <a href="/contact.html">Provider Support</a>
   </div>
   <p class="footer-copy">© 2026 GLP-1 Health Connect · Cherry and Cherry LLC · Independent educational website. Not a medical provider.</p>
 </footer>
 
 <script>
   function toggleMenu() {
-    document.getElementById('mobileMenu').classList.toggle('open');
+    const menu = document.getElementById('mobileMenu');
+    const open = menu.classList.toggle('open');
+    document.querySelector('.hamburger').setAttribute('aria-expanded', String(open));
   }
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && document.getElementById('mobileMenu').classList.contains('open')) {
+      toggleMenu(); document.querySelector('.hamburger').focus();
+    }
+  });
   function toggleFaq(btn) {
-    const item = btn.closest('.faq-item');
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
+    const open = btn.getAttribute('aria-expanded') !== 'true';
+    document.querySelectorAll('.faq-q').forEach(button => {
+      button.setAttribute('aria-expanded', 'false');
+      button.closest('.faq-item').classList.remove('open');
+      document.getElementById(button.getAttribute('aria-controls')).hidden = true;
+    });
+    if (open) {
+      btn.setAttribute('aria-expanded', 'true');
+      btn.closest('.faq-item').classList.add('open');
+      document.getElementById(btn.getAttribute('aria-controls')).hidden = false;
+    }
   }
 </script>
 </body>
