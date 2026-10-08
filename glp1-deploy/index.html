@@ -332,6 +332,31 @@
       font-size: 10px; color: #aaa; text-align: center; margin-top: -8px;
     }
 
+    /* ── SPACIOUS MODERN PROVIDER CARDS (2-up) ── */
+    #providers { padding-block: 96px; }
+    .providers-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; max-width: 940px; margin: 0 auto; }
+    .provider-card { padding: 44px 40px 36px; gap: 26px; border-radius: 24px; box-shadow: 0 10px 40px rgba(11,31,58,.08); }
+    .provider-card:hover { transform: translateY(-4px); box-shadow: 0 18px 50px rgba(11,31,58,.14); }
+    .provider-card.top-pick { border-width: 2px; }
+    .pcard-header { gap: 18px; }
+    .pcard-logo { width: 60px; height: 60px; border-radius: 16px; font-size: 18px; }
+    .pcard-name { font-size: 24px; }
+    .pcard-best { font-size: 14px; margin-top: 4px; line-height: 1.45; }
+    .pcard-price { font-size: 52px; line-height: 1; letter-spacing: -.02em; }
+    .pcard-per { font-size: 17px; }
+    .pcard-tags { gap: 8px; }
+    .tag { font-size: 12px; padding: 6px 13px; }
+    .pcard-features { gap: 14px; }
+    .pcard-feat { font-size: 15px; line-height: 1.5; align-items: flex-start; }
+    .feat-dot { margin-top: 8px; }
+    .pcard-cta { padding: 17px; font-size: 16px; border-radius: 12px; }
+    .pcard-affil { font-size: 11px; margin-top: -12px; }
+    @media (max-width: 760px) {
+      .providers-grid { grid-template-columns: 1fr; gap: 24px; }
+      .provider-card { padding: 36px 26px 30px; }
+      #providers { padding-block: 64px; }
+    }
+
     /* ── HOW IT WORKS ── */
     .hiw-section { background: var(--mist); }
     .steps-grid {
@@ -598,98 +623,6 @@
         <p class="pcard-affil">Affiliate link — we may earn a commission</p>
       </div>
 
-      <!-- TrimRx -->
-      <div class="provider-card">
-        <div class="pcard-header">
-          <div class="pcard-logo" style="background:#185FA5;">TR</div>
-          <div>
-            <div class="pcard-name">TrimRx</div>
-            <div class="pcard-best">Best for: Affordable weekly injections</div>
-          </div>
-        </div>
-        <div class="pcard-divider"></div>
-        <div class="pcard-price-row">
-          <div class="pcard-price">$149</div>
-          <div class="pcard-per">/month</div>
-        </div>
-        <div class="pcard-tags">
-          <span class="tag green">GLP-1 Injections</span>
-          <span class="tag green">GLP-1 + GIP Options</span>
-          <span class="tag">Weekly injection</span>
-          <span class="tag">In stock</span>
-        </div>
-        <div class="pcard-features">
-          <div class="pcard-feat"><div class="feat-dot"></div>GLP-1 injections starting at $149/mo</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>GLP-1 + GIP injections from $249/mo</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>One simple injection per week</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>Simple online enrollment process</div>
-        </div>
-        <a href="#" class="pcard-cta ghost">Get Started →</a>
-        <p class="pcard-affil">Affiliate link — we may earn a commission</p>
-      </div>
-
-      <!-- Eden -->
-      <div class="provider-card">
-        <div class="pcard-header">
-          <div class="pcard-logo" style="background:#534AB7;">ED</div>
-          <div>
-            <div class="pcard-name">Eden</div>
-            <div class="pcard-best">Best for: Transparent, simple pricing</div>
-          </div>
-        </div>
-        <div class="pcard-divider"></div>
-        <div class="pcard-price-row">
-          <div class="pcard-price">$99</div>
-          <div class="pcard-per">/month</div>
-        </div>
-        <div class="pcard-tags">
-          <span class="tag green">Semaglutide</span>
-          <span class="tag green">Tirzepatide</span>
-          <span class="tag">No insurance needed</span>
-          <span class="tag">Free assessment</span>
-        </div>
-        <div class="pcard-features">
-          <div class="pcard-feat"><div class="feat-dot"></div>Semaglutide at $99/month</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>Tirzepatide at $129/month</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>Free 3-minute assessment</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>Licensed provider consultation</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>No insurance required</div>
-        </div>
-        <a href="#" class="pcard-cta ghost">Start Assessment →</a>
-        <p class="pcard-affil">Affiliate link — we may earn a commission</p>
-      </div>
-
-      <!-- Fridays Health -->
-      <div class="provider-card">
-        <div class="pcard-header">
-          <div class="pcard-logo" style="background:#E74C3C;">FH</div>
-          <div>
-            <div class="pcard-name">Fridays Health</div>
-            <div class="pcard-best">Best for: Competitive pricing and expert clinical care</div>
-          </div>
-        </div>
-        <div class="pcard-divider"></div>
-        <div class="pcard-price-row">
-          <div class="pcard-price">$117</div>
-          <div class="pcard-per">/month</div>
-        </div>
-        <div class="pcard-tags">
-          <span class="tag green">Semaglutide</span>
-          <span class="tag green">Tirzepatide</span>
-          <span class="tag green">Brand-name & Compounded</span>
-          <span class="tag green">No Insurance Required</span>
-        </div>
-        <div class="pcard-features">
-          <div class="pcard-feat"><div class="feat-dot"></div>Semaglutide as low as $117/mo (lowest price)</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>Tirzepatide as low as $198/mo</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>Expert clinical care included</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>Flexible payment plans available</div>
-          <div class="pcard-feat"><div class="feat-dot"></div>Save up to $2,288 vs. retail</div>
-        </div>
-        <a href="#" class="pcard-cta solid">Get Started →</a>
-        <p class="pcard-affil">Affiliate link — we may earn a commission</p>
-      </div>
-
       <!-- HumeCare+ -->
       <div class="provider-card">
         <div class="pcard-header">
@@ -748,30 +681,6 @@
           <tr>
             <td>SkinnyRx</td>
             <td>$99 /mo</td>
-            <td class="check">✓</td>
-            <td class="check">✓</td>
-            <td class="check">✓</td>
-            <td class="check">✓</td>
-          </tr>
-          <tr>
-            <td>TrimRx</td>
-            <td>$149 /mo</td>
-            <td class="check">✓</td>
-            <td class="dash">—</td>
-            <td class="check">✓</td>
-            <td class="check">✓</td>
-          </tr>
-          <tr>
-            <td>Eden</td>
-            <td>$99 /mo</td>
-            <td class="check">✓</td>
-            <td class="check">✓</td>
-            <td class="check">✓</td>
-            <td class="check">✓</td>
-          </tr>
-          <tr>
-            <td>Fridays Health</td>
-            <td>$117 /mo</td>
             <td class="check">✓</td>
             <td class="check">✓</td>
             <td class="check">✓</td>
