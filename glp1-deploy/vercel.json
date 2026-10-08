@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/how-we-review.html", "destination": "/methodology.html" },
+    { "source": "/how-we-review", "destination": "/methodology.html" }
+  ]
+}
